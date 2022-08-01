@@ -1,0 +1,126 @@
+.h1 {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 50px;
+}
+
+.h2 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 126.5%;
+}
+
+.h4 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.text-bigger {
+	@include text-1;
+}
+
+.text-big {
+	@include text-2;
+}
+
+.text-medium {
+	@include text-3;
+}
+
+.text-small {
+	@include text-small;
+}
+
+.link {
+	@include button;
+	cursor: pointer;
+	color: $black;
+	white-space: nowrap;
+	transition: $transition;
+
+	&:hover {
+		color: $red;
+	}
+}
+
+.link_red {
+	color: $red;
+}
+
+.link_gray {
+	color: $text-dull;
+}
+
+.link-green {
+	color: $main;
+}
+
+.button {
+	@include button;
+	color: $black;
+	padding: 12px 15px;
+	border: 1px solid $main;
+
+	&:hover {
+		border-color: $red;
+		color: $red;
+	}
+}
+
+.button-main {
+	@include button;
+	background: $main;
+	color: $white;
+	padding: 12px 15px;
+	border: 1px solid $main;
+
+	&:hover {
+		background: $red;
+		border: 1px solid $red;
+	}
+}
+
+.free-call {
+	@include text-3;
+	color: $text-dull;
+}
+
+.blog-text {
+	@include text-2;
+	font-weight: 400;
+}
+
+.blog-card-filter {
+	@include text-3;
+	color: $text-dull;
+}
+
+.blog-card-text {
+	@include text-3;
+	color: $text-color;
+}
+
+.blog-button {
+	@include text-small;
+	color: $text-dull;
+	border: 1px solid $text-dull;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	white-space: nowrap;
+	transition: $transition;
+
+	&:hover {
+		background: $text-dull;
+		color: $white;
+	}
+}

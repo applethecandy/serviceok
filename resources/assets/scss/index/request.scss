@@ -1,0 +1,46 @@
+.request {
+	background: $bg;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 80px 30px !important;
+	margin-top: 110px !important;
+
+	&__content {
+		max-width: 570px;
+
+		.text-big {
+			margin: 20px 0;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		.button-main {
+			margin-right: 10px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		max-width: 410px;
+
+		img {
+			width: 100%;
+		}
+
+		@media (max-width: 950px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 950px) {
+		margin-top: 0 !important;
+	}
+
+	@media (max-width: 600px){
+		padding: 30px 30px !important;
+	}
+}

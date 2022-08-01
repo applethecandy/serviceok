@@ -1,0 +1,68 @@
+.banner-section {
+	background: $bg;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media (max-width: 1024px) {
+		padding-top: 30px;
+	}
+}
+
+.banner-form {
+	.h1,
+	.text-medium {
+		margin-bottom: 20px;
+	}
+}
+
+.find-service {
+	display: flex;
+	flex-direction: column;
+
+	&__buttons {
+		display: flex;
+
+		margin-top: 20px;
+	}
+
+	&__examples {
+		display: grid;
+		grid-template-rows: 21px 1fr;
+		grid-template-columns: repeat(4, auto);
+
+		.text-small {
+			color: $text-dull;
+			grid-column: 1/5;
+		}
+
+		.blog-button {
+			margin-right: 15px;
+		}
+
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	.button-main {
+		align-self: flex-end;
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+	}
+}
+
+.banner__img {
+	max-width: 515px;
+	img {
+		width: 100%;
+	}
+	margin-left: 30px;
+
+	@media (max-width: 950px) {
+		display: none;
+	}
+}

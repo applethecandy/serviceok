@@ -1,0 +1,26 @@
+.service-section {
+	.container {
+	}
+}
+
+.work-stages {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__item {
+		max-width: 280px;
+		padding-left: 20px;
+		border-left: 1px solid $gray;
+		@media (max-width: 950px) {
+			margin-bottom: 30px;
+			&:nth-last-child(1) {
+				margin-bottom: 0px;
+			}
+		}
+
+		.h4 {
+			margin-bottom: 20px;
+		}
+	}
+}

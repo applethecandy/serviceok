@@ -1,0 +1,93 @@
+.footer {
+	border-top: 1px solid $light-gray;
+	padding: 35px 0;
+
+	.container {
+		display: grid;
+		grid-template-areas:
+			"nav contacts"
+			"policy contacts";
+
+		@media (max-width: 700px) {
+			grid-template-areas:
+				"nav"
+				"contacts"
+				"policy";
+		}
+	}
+
+	&__nav {
+		grid-area: nav;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (max-width: 700px) {
+			min-height: 150px;
+		}
+	}
+
+	&__contacts {
+		grid-area: contacts;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: auto;
+		min-height: 220px;
+
+		@media (max-width: 700px) {
+			margin: 20px 0;
+		}
+	}
+
+	&__policy {
+		grid-area: policy;
+		display: flex;
+		align-items: center;
+
+		& a::after {
+			content: "|";
+			margin: 0 10px;
+		}
+
+		& a:nth-last-child(1)::after {
+			content: none;
+		}
+
+		@media (max-width: 700px) {
+			flex-direction: column;
+			align-items: flex-start;
+
+			& a::after {
+				content: none;
+			}
+		}
+	}
+
+	&__phone {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__time {
+		@include button;
+		cursor: unset;
+	}
+
+	&__socials {
+		max-width: 140px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.social-link:hover svg path,
+.social-link:nth-child(1):hover rect {
+	fill: $red;
+	transition: $transition;
+}
+
+.social-link:nth-child(1):hover svg path {
+	fill: #f7faff;
+	transition: $transition;
+}

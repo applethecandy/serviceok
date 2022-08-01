@@ -1,0 +1,68 @@
+.questions-stages-section {
+	padding: 40px;
+	margin-bottom: 0 !important;
+}
+
+.questions-section {
+	background: $bg;
+	padding: 40px 0;
+	margin-bottom: 0 !important;
+}
+
+.questions-steps {
+	max-width: 750px;
+
+	&__slider {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 800px) {
+			flex-direction: column;
+		}
+	}
+
+	&__swiper{
+		max-width: 550px;
+		overflow: hidden;
+	}
+
+	&__buttons {
+		align-self: center;
+		margin-bottom: 20px;
+		@media (max-width: 800px) {
+			align-self: flex-start;
+		}
+	}
+
+	&__item {
+		.h2 {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__input {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+
+		.input-field {
+			margin-bottom: 10px;
+			&:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		}
+
+		& .button {
+			margin: 0 10px 0 20px;
+		}
+	}
+
+	&__pagi {
+		margin-top: 30px;
+	}
+
+	& .find-service__examples {
+		max-width: 400px;
+	}
+
+}

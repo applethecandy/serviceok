@@ -1,0 +1,52 @@
+.registration-section{
+    padding-top: 20px;
+}
+
+.master-form {
+	margin-top: 40px;
+    max-width: 670px;
+
+	.h4 {
+		margin-bottom: 30px;
+	}
+
+	&__data {
+		margin-bottom: 30px;
+	}
+
+	&__field {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		align-items: center;
+		margin-bottom: 20px;
+
+		label {
+			margin-right: 30px;
+		}
+
+        @media (max-width: 700px){
+            grid-template-columns: 1fr;
+
+            label {
+                margin-bottom: 10px;
+            }
+        }
+	}
+
+	&__services {
+		margin-bottom: 30px;
+	}
+
+	&__boxes {
+		display: grid;
+		grid-template-columns: 360px 360px;
+        
+        .check{
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 700px){
+            grid-template-columns: 1fr;
+        }
+	}
+}

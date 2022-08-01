@@ -1,0 +1,112 @@
+@import "../fonts/stylesheet.css";
+@import "./nullify.scss";
+@import "./abstracts/_mixins.scss";
+@import "./abstracts/_variables.scss";
+@import "./typography.scss";
+@import "./header.scss";
+@import "./index/banner.scss";
+@import "./index/masters.scss";
+@import "./index/service.scss";
+@import "./index/request.scss";
+@import "./index/reviews.scss";
+@import "./index/main_blog.scss";
+@import "./become_master/registration.scss";
+@import "./impresum/impresum.scss";
+@import "./article/article.scss";
+@import "./blog/articles.scss";
+@import "./questions/questions.scss";
+@import "./modal.scss";
+@import "./footer.scss";
+
+body {
+	font-family: "Mulish";
+	color: $black;
+}
+
+.container {
+	max-width: 1240px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+#page {
+	margin-top: 80px;
+}
+
+.section {
+	margin-bottom: 30px;
+
+	&_h2 {
+		margin-bottom: 50px;
+		@media (max-width: 600px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.input-field {
+	@include text-3;
+	border: 1px solid $gray;
+	padding: 15px 10px;
+	width: 100%;
+
+	&::placeholder {
+		color: $text-dull;
+	}
+}
+
+.check {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 35px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+}
+
+.checkmark {
+	box-sizing: border-box;
+	background-color: #fafafa;
+	border: 1px solid #6a7c92;
+	border-radius: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 24px;
+	width: 24px;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.check input:checked ~ .checkmark {
+	background-color: #eef1f4;
+}
+
+.check .checkmark:after {
+	left: 9px;
+	top: 3px;
+	width: 4px;
+	height: 12px;
+	border: solid #454f5b;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
