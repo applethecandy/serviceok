@@ -2,6 +2,68 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/assets/js/customSelect.js":
+/*!*********************************************!*\
+  !*** ./resources/assets/js/customSelect.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var customSelect = function customSelect(select, array) {
+  var list = select.querySelector(".custom-select__list");
+  var input = select.querySelector(".custom-select__input");
+
+  var createListItem = function createListItem(text, id) {
+    var elem = document.createElement("div");
+    elem.innerText = text;
+    elem.classList.add("custom-select__item");
+    elem.dataset.value = id;
+    elem.addEventListener("click", function () {
+      input.value = elem.innerText;
+    });
+    return elem;
+  };
+
+  var renderList = function renderList(array) {
+    list.innerHTML = "";
+    var listToRender = array.map(function (service) {
+      return createListItem(service.name, service.id);
+    });
+    listToRender.forEach(function (item) {
+      list.appendChild(item);
+    });
+  };
+
+  renderList(array);
+
+  var windowListener = function windowListener() {
+    list.classList.remove("list-open");
+    window.removeEventListener("click", windowListener);
+  };
+
+  input.addEventListener("click", function (e) {
+    e.stopPropagation();
+    list.classList.add("list-open");
+    window.addEventListener("click", windowListener);
+  });
+
+  var inputHandler = function inputHandler() {
+    var newArr = array.filter(function (item) {
+      return item.name.toLowerCase().includes(input.value.toLowerCase());
+    });
+    renderList(newArr);
+  };
+
+  input.oninput = inputHandler;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (customSelect);
+
+/***/ }),
+
 /***/ "./resources/assets/js/main.js":
 /*!*************************************!*\
   !*** ./resources/assets/js/main.js ***!
@@ -9,34 +71,140 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _swiper_reviews_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper_reviews.js */ "./resources/assets/js/swiper_reviews.js");
-/* harmony import */ var _swiper_question__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./swiper_question */ "./resources/assets/js/swiper_question.js");
-/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/style.scss */ "./resources/assets/scss/style.scss");
+/* harmony import */ var _swiperReviews_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiperReviews.js */ "./resources/assets/js/swiperReviews.js");
+/* harmony import */ var _questions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./questions.js */ "./resources/assets/js/questions.js");
+/* harmony import */ var _customSelect_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./customSelect.js */ "./resources/assets/js/customSelect.js");
+/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/style.scss */ "./resources/assets/scss/style.scss");
 
 
 
-var burger = document.querySelector(".nav-toggle");
-var menu = document.querySelector(".header__nav");
-burger.addEventListener("click", function () {
-  burger.classList.toggle("opened");
-  menu.classList.toggle("header__nav_active");
-});
-var modal = document.querySelector(".modal"); // const modalBtn = document.querySelector("#modal-open");
 
-document.querySelector("#modal-close").addEventListener("click", function () {
-  modal.classList.remove("modal-open");
-  document.querySelector("body").style.overflow = "auto";
-}); // modalBtn.addEventListener("click", () => {
-// 	modal.classList.add("modal-open");
-// 	document.querySelector("body").style.overflow = "hidden";
-// });
+var cities = ["Берлин", "Магнейм", "Штутгарт", "Кёльн", "Дюссельдорф"];
+
+var burgerOpen = function burgerOpen() {
+  var burger = document.querySelector(".nav-toggle");
+  var menu = document.querySelector(".header__nav");
+
+  var windowListener = function windowListener() {
+    burger.classList.remove("opened");
+    menu.classList.remove("header__nav_active");
+    window.removeEventListener("click", windowListener);
+  };
+
+  burger.addEventListener("click", function (e) {
+    e.stopPropagation();
+    window.addEventListener("click", windowListener);
+    burger.classList.toggle("opened");
+    menu.classList.toggle("header__nav_active");
+  });
+};
+
+var displayCities = function displayCities(array) {
+  var windowListener = function windowListener() {
+    document.querySelector(".header-cities").classList.remove("header-cities_open");
+    window.removeEventListener("click", windowListener);
+  };
+
+  var citiesList = document.querySelector(".header-cities__list");
+  var citiesOpen = document.querySelector(".header-cities__select");
+  var activeCity = document.querySelector(".header-cities__selected");
+  citiesList.innerHTML = "";
+  array.forEach(function (city) {
+    var elem = document.createElement("div");
+    elem.innerHTML = city;
+    elem.classList.add("header-cities__item");
+    elem.addEventListener("click", function () {
+      activeCity.innerHTML = city;
+    });
+    citiesList.appendChild(elem);
+  });
+  citiesOpen.addEventListener("click", function (e) {
+    e.stopPropagation();
+    window.addEventListener("click", windowListener);
+    document.querySelector(".header-cities").classList.toggle("header-cities_open");
+  });
+};
+
+burgerOpen();
+displayCities(cities);
+
+if (window.location.pathname === ("/index.html" || 0)) {
+  var selector = document.querySelector("#custom-select-1");
+  var exampleList = document.querySelector(".find-service__list");
+  var services = [{
+    id: "service-1",
+    name: "Стирка ковров",
+    dataSet: 1
+  }, {
+    id: "service-2",
+    name: "Ремонт техники",
+    dataSet: 2
+  }, {
+    id: "service-3",
+    name: "Уборка дома",
+    dataSet: 3
+  }, {
+    id: "service-4",
+    name: "Помощь с переездом",
+    dataSet: 4
+  }, {
+    id: "service-5",
+    name: "Сантехник",
+    dataSet: 5
+  }, {
+    id: "service-6",
+    name: "Электрик",
+    dataSet: 6
+  }, {
+    id: "service-7",
+    name: "Замочник",
+    dataSet: 7
+  }, {
+    id: "service-8",
+    name: "Лалала",
+    dataSet: 8
+  }, {
+    id: "service-9",
+    name: "Лалала",
+    dataSet: 9
+  }, {
+    id: "service-10",
+    name: "Лалала",
+    dataSet: 10
+  }];
+  (0,_customSelect_js__WEBPACK_IMPORTED_MODULE_2__["default"])(selector, services);
+  var bannerBtns = document.querySelectorAll(".blog-button");
+  bannerBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      console.log(btn.innerHTML);
+    });
+  });
+
+  var showExamples = function showExamples(select) {
+    var input = select.querySelector(".custom-select__input");
+    exampleList.innerHTML = "";
+    services.slice(0, 4).forEach(function (item) {
+      var elem = document.createElement("div");
+      elem.innerHTML = item.name;
+      elem.classList.add("blog-button");
+      elem.classList.add("banner-btn");
+      elem.dataset.service = item.dataSet;
+      elem.addEventListener("click", function () {
+        input.value = item.name;
+      });
+      exampleList.appendChild(elem);
+    });
+  };
+
+  showExamples(selector);
+}
 
 /***/ }),
 
-/***/ "./resources/assets/js/swiper_question.js":
-/*!************************************************!*\
-  !*** ./resources/assets/js/swiper_question.js ***!
-  \************************************************/
+/***/ "./resources/assets/js/questions.js":
+/*!******************************************!*\
+  !*** ./resources/assets/js/questions.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -47,58 +215,106 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  var swiper_questions = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".questions-steps__swiper", {
-    autoheight: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    allowTouchMove: false,
-    navigation: {
-      prevEl: ".questions-pagi-button_prev",
-      nextEl: ".questions-pagi-button_next"
-    }
-  });
-  var currentSlide = document.querySelector("#current-step");
-  swiper_questions.on("slideChange", function () {
-    var realIndex = swiper_questions.realIndex;
-    currentSlide.innerHTML = realIndex + 1;
-  });
+var currentSlide = document.querySelector("#current-step");
+var nextBtn = document.querySelector(".questions-pagi-button_next");
+var submitBtn = document.querySelector("#submit-form");
+var service = document.querySelector("#question-service");
+var name = document.querySelector("#question-name");
+var address = document.querySelector("#question-address");
+var time = document.querySelector("#question-time");
+var date = document.querySelector("#question-date");
+var phoneNum = document.querySelector("#question-phone");
+var swiper_questions = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".questions-steps__swiper", {
+  autoheight: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  allowTouchMove: false,
+  navigation: {
+    prevEl: ".questions-pagi-button_prev",
+    nextEl: ".questions-pagi-button_next"
+  }
 });
+swiper_questions.on("slideChange", function () {
+  var realIndex = swiper_questions.realIndex;
+  currentSlide.innerHTML = realIndex + 1;
+
+  if (realIndex + 1 === 5) {
+    nextBtn.style.display = "none";
+    submitBtn.style.display = "flex";
+  } else {
+    nextBtn.style.display = "flex";
+    submitBtn.style.display = "none";
+  }
+});
+
+if (window.location.pathname === "/questions.html") {
+  var inputEl = document.querySelector("#question-phone");
+  var acceptKey = "0123456789+";
+
+  var checkInputTel = function checkInputTel(e) {
+    var key = typeof e.which == "number" ? e.which : e.keyCode;
+    var start = this.selectionStart,
+        end = this.selectionEnd;
+    var filtered = this.value.split("").filter(filterInput);
+    this.value = filtered.join("");
+    var move = filterInput(String.fromCharCode(key)) || key == 0 || key == 8 ? 0 : 1;
+    this.setSelectionRange(start - move, end - move);
+  };
+
+  var filterInput = function filterInput(val) {
+    return acceptKey.indexOf(val) > -1;
+  };
+
+  inputEl.addEventListener("input", checkInputTel);
+  var modal = document.querySelector(".modal");
+  document.querySelector("#modal-close").addEventListener("click", function () {
+    modal.classList.remove("modal-open");
+    document.querySelector("body").style.overflow = "auto";
+  });
+
+  var formSubmit = function formSubmit(e) {
+    e.preventDefault();
+    console.log(service.value);
+    console.log(name.value);
+    console.log(address.value);
+    console.log(time.value);
+    console.log(date.value);
+    console.log(phoneNum.value);
+    modal.classList.add("modal-open");
+  };
+
+  document.querySelector("#questions-steps").addEventListener("submit", formSubmit);
+}
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (swiper_questions);
 
 /***/ }),
 
-/***/ "./resources/assets/js/swiper_reviews.js":
-/*!***********************************************!*\
-  !*** ./resources/assets/js/swiper_reviews.js ***!
-  \***********************************************/
+/***/ "./resources/assets/js/swiperReviews.js":
+/*!**********************************************!*\
+  !*** ./resources/assets/js/swiperReviews.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 /* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-swiper", {
-    autoheight: true,
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      950: {
-        slidesPerView: 3
-      },
-      1024: {
-        slidesPerView: 4
-      }
+var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-swiper", {
+  autoheight: true,
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    950: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
     }
-  });
+  }
 });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (swiper);
 
 /***/ }),
 

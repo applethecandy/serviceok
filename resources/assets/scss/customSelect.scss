@@ -1,0 +1,30 @@
+.custom-select {
+	position: relative;
+	&__list {
+		border: 1px solid $gray;
+		border-top: none;
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		background: $white;
+		max-height: 201px;
+		overflow-y: auto;
+	}
+
+	&__item {
+		padding: 10px;
+		cursor: pointer;
+		transition: $transition;
+		&:hover {
+			background: $red;
+			color: $white;
+		}
+	}
+}
+
+.list-open {
+	display: flex;
+}

@@ -5,6 +5,7 @@
 @import "./typography.scss";
 @import "./header.scss";
 @import "./index/banner.scss";
+@import "./customSelect.scss";
 @import "./index/masters.scss";
 @import "./index/service.scss";
 @import "./index/request.scss";
@@ -21,6 +22,16 @@
 body {
 	font-family: "Mulish";
 	color: $black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
 }
 
 .container {

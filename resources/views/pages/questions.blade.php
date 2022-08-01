@@ -8,9 +8,7 @@
     <title>Impresum</title>
 
     <link rel="stylesheet" type="text/css" href="{{ mix('css/style.css') }}" />
-    <script src="{{ mix('js/main.js') }}"></script>
-    <script src="{{ mix('js/swiper_question.js') }}"></script>
-    <script src="{{ mix('js/swiper_reviews.js') }}"></script>
+    <script defer src="{{ mix('js/main.js') }}"></script>
 </head>
 
 <body>
@@ -21,13 +19,21 @@
                     <img src="{{ asset('/images/logo.svg') }}" alt="logo" />
                 </a>
 
-                <div class="header__city">
-                    <div class="header__city-select">
-                        <p class="link">Берлин</p>
+                <div class="header-cities">
+                    <div class="link header-cities__select">
+                        <p class="header-cities__selected">Берлин</p>
                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.03147 1.03147L5 5.06294L0.968532 1.03147" stroke="#0C1534" stroke-width="1.5" />
                         </svg>
+                    </div>
+
+                    <div class="header-cities__list">
+                        <div class="header-cities__item">Берлин</div>
+                        <div class="header-cities__item">Мангейм</div>
+                        <div class="header-cities__item">Штутгарт</div>
+                        <div class="header-cities__item">Кёльн</div>
+                        <div class="header-cities__item">Дюссельдорф</div>
                     </div>
                 </div>
 
@@ -79,7 +85,7 @@
 
             <section class="section questions-section">
                 <div class="container">
-                    <form class="questions-steps">
+                    <form class="questions-steps" id="questions-steps">
                         <div class="questions-steps__slider">
                             <div class="questions-steps__swiper">
                                 <div class="swiper-wrapper">
@@ -87,15 +93,23 @@
                                         <h2 class="h2">Что нужно сделать?</h2>
 
                                         <div class="questions-steps__input">
-                                            <input type="text" class="input-field" placeholder="Выберите услугу" />
+                                            <div class="custom-select" id="custom-select-1">
+                                                <input type="text" placeholder="Чем вам помочь?"
+                                                    class="input-field custom-select__input" />
+                                                <div class="custom-select__list"></div>
+                                            </div>
                                         </div>
 
                                         <div class="find-service__examples">
                                             <p class="text-small">Например:</p>
-                                            <div class="blog-button">Стирка ковров</div>
-                                            <div class="blog-button">Ремонт техники</div>
-                                            <div class="blog-button">Уборка дома</div>
-                                            <div class="blog-button">Помощь с переездом</div>
+                                            <div class="find-service__list">
+                                                <div class="blog-button banner-btn" data-service="1">Стирка ковров</div>
+                                                <div class="blog-button banner-btn" data-service="1">Ремонт техники
+                                                </div>
+                                                <div class="blog-button banner-btn" data-service="1">Уборка дома</div>
+                                                <div class="blog-button banner-btn" data-service="1">Помощь с переездом
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -103,7 +117,8 @@
                                         <h2 class="h2">Как к вам обращаться?</h2>
 
                                         <div class="questions-steps__input">
-                                            <input type="text" class="input-field" placeholder="Ваше имя" />
+                                            <input type="text" class="input-field" placeholder="Ваше имя"
+                                                id="question-name" />
                                         </div>
                                     </div>
 
@@ -111,8 +126,10 @@
                                         <h2 class="h2">Когда приступить к работе?</h2>
 
                                         <div class="questions-steps__input">
-                                            <input type="text" class="input-field" placeholder="Время" />
-                                            <input type="text" class="input-field" placeholder="Дата" />
+                                            <input type="time" class="input-field" placeholder="Время"
+                                                id="question-time" />
+                                            <input type="date" class="input-field" placeholder="Дата"
+                                                id="question-date" />
                                         </div>
                                     </div>
 
@@ -120,7 +137,8 @@
                                         <h2 class="h2">По какому адресу?</h2>
 
                                         <div class="questions-steps__input">
-                                            <input type="text" class="input-field" placeholder="Укажите адрес" />
+                                            <input type="text" class="input-field" id="question-address"
+                                                placeholder="Укажите адрес" />
                                         </div>
                                     </div>
 
@@ -128,7 +146,8 @@
                                         <h2 class="h2">Укажите свой номер телефона</h2>
 
                                         <div class="questions-steps__input">
-                                            <input type="text" class="input-field" placeholder="+49" />
+                                            <input type="tel" class="input-field" id="question-phone"
+                                                placeholder="+49" min="0" step="1" required />
                                             <p class="small-text">Ваш номер телефона будет виден только нашим
                                                 специалистам. Позже вы сами решите, показывать ли его исполнителю</p>
                                         </div>
@@ -137,8 +156,10 @@
                             </div>
 
                             <div class="questions-steps__buttons">
-                                <button class="questions-pagi-button_prev button">Назад</button>
-                                <button class="questions-pagi-button_next button-main">Далее</button>
+                                <div class="questions-pagi-button_prev button">Назад</div>
+                                <div class="questions-pagi-button_next button-main">Далее</div>
+                                <input type="submit" class="button-main" id="submit-form" value="Далее"
+                                    style="display: none" />
                             </div>
                         </div>
                         <div class="questions-steps__pagi text-medium">Шаг <span id="current-step">1</span> из <span

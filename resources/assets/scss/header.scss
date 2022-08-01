@@ -10,7 +10,7 @@
 
 	top: 0;
 	left: 0;
-	
+
 	.container {
 		display: grid;
 		grid-template-columns: 170px 70px 35%;
@@ -25,7 +25,7 @@
 	&__logo {
 		display: flex;
 		max-width: 155px;
-		img{
+		img {
 			width: 100%;
 		}
 	}
@@ -39,7 +39,7 @@
 		@media (max-width: 1024px) {
 			opacity: 0;
 			position: absolute;
-			top: 65px;
+			top: 64px;
 			right: 0;
 			flex-direction: column;
 			align-items: flex-start;
@@ -58,20 +58,76 @@
 		}
 	}
 
-	&__city {
+	&-cities {
 		display: flex;
+		position: relative;
+		width: fit-content;
 
-		&-select {
+		&__select {
 			display: flex;
 			align-items: center;
+			user-select: none;
 
-			.link {
-				margin-right: 5px;
+			& svg {
+				transition: $transition;
+			}
+
+			& svg path {
+				transition: $transition;
+				stroke: red;
+			}
+
+			// &:hover svg path {
+			// 	transition: $transition;
+			// 	stroke: red;
+			// }
+		}
+
+		&__selected {
+			margin-right: 5px;
+		}
+
+		&__list {
+			position: absolute;
+			top: 76px;
+			left: -6px;
+			width: 200px;
+			border: 1px solid $light-gray;
+			border-top: none;
+			transition: $transition;
+			display: flex;
+			flex-direction: column;
+			transform: translateY(-201px);
+			opacity: 0;
+			z-index: -1;
+
+			@media(max-width: 1024px){
+				top: 64px;
+			}
+		}
+
+		&_open {
+			.header-cities__list {
+				transform: translateY(0);
+				opacity: 1;
+			}
+			.header-cities__select svg {
+				transform: rotate(90deg);
+			}
+		}
+
+		&__item {
+			padding: 10px;
+			background: $bg;
+			transition: $transition;
+			cursor: pointer;
+			&:hover {
+				color: $red;
 			}
 		}
 
 		@media (max-width: 1024px) {
-			justify-content: flex-end;
+			margin-left: auto;
 			margin-right: 20px;
 		}
 	}

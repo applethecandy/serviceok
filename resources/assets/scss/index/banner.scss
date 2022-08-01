@@ -24,18 +24,16 @@
 
 	&__buttons {
 		display: flex;
-
+		justify-content: space-between;
 		margin-top: 20px;
 	}
 
 	&__examples {
-		display: grid;
-		grid-template-rows: 21px 1fr;
-		grid-template-columns: repeat(4, auto);
+		display: flex;
+		flex-direction: column;
 
 		.text-small {
 			color: $text-dull;
-			grid-column: 1/5;
 		}
 
 		.blog-button {
@@ -45,6 +43,12 @@
 		@media (max-width: 600px) {
 			display: none;
 		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 	}
 
 	.button-main {

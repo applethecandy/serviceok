@@ -8,9 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="{{ mix('css/style.css') }}" />
-    <script src="{{ mix('js/main.js') }}"></script>
-    <script src="{{ mix('js/swiper_question.js') }}"></script>
-    <script src="{{ mix('js/swiper_reviews.js') }}"></script>
+    <script defer src="{{ mix('js/main.js') }}"></script>
 </head>
 
 <body>
@@ -21,13 +19,21 @@
                     <img src="{{ asset('/images/logo.svg') }}" alt="logo" />
                 </a>
 
-                <div class="header__city">
-                    <div class="header__city-select">
-                        <p class="link">Берлин</p>
+                <div class="header-cities">
+                    <div class="link header-cities__select">
+                        <p class="header-cities__selected">Берлин</p>
                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.03147 1.03147L5 5.06294L0.968532 1.03147" stroke="#0C1534" stroke-width="1.5" />
                         </svg>
+                    </div>
+
+                    <div class="header-cities__list">
+                        <div class="header-cities__item">Берлин</div>
+                        <div class="header-cities__item">Мангейм</div>
+                        <div class="header-cities__item">Штутгарт</div>
+                        <div class="header-cities__item">Кёльн</div>
+                        <div class="header-cities__item">Дюссельдорф</div>
                     </div>
                 </div>
 
@@ -65,15 +71,22 @@
 
                         <form action="" class="find-service">
                             <label for="input-field">Начните вводить название услуги</label>
-                            <input type="text" placeholder="Чем вам помочь?" class="input-field" id="input-field" />
+                            <div class="custom-select" id="custom-select-1">
+                                <input type="text" placeholder="Чем вам помочь?"
+                                    class="input-field custom-select__input" />
+
+                                <div class="custom-select__list"></div>
+                            </div>
 
                             <div class="find-service__buttons">
                                 <div class="find-service__examples">
                                     <p class="text-small">Например:</p>
-                                    <div class="blog-button">Стирка ковров</div>
-                                    <div class="blog-button">Ремонт техники</div>
-                                    <div class="blog-button">Уборка дома</div>
-                                    <div class="blog-button">Помощь с переездом</div>
+                                    <div class="find-service__list">
+                                        <div class="blog-button banner-btn" data-service="1">Стирка ковров</div>
+                                        <div class="blog-button banner-btn" data-service="1">Ремонт техники</div>
+                                        <div class="blog-button banner-btn" data-service="1">Уборка дома</div>
+                                        <div class="blog-button banner-btn" data-service="1">Помощь с переездом</div>
+                                    </div>
                                 </div>
 
                                 <input type="submit" value="Поиск" class="button-main" />
@@ -106,25 +119,10 @@
                     </h2>
 
                     <ul class="masters-list">
-                        <li class="masters-list__item"><a href="" class="link">Слесарь</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Борьба с вредителями</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Электрик</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Сантехник</a></li>
-
-                        <li class="masters-list__item"><a href="" class="link">Слесарь</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Борьба с вредителями</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Электрик</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Сантехник</a></li>
-
-                        <li class="masters-list__item"><a href="" class="link">Слесарь</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Борьба с вредителями</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Электрик</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Сантехник</a></li>
-
-                        <li class="masters-list__item"><a href="" class="link">Слесарь</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Борьба с вредителями</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Электрик</a></li>
-                        <li class="masters-list__item"><a href="" class="link">Сантехник</a></li>
+                        <li class="masters-list__item"><a href="" class="link">Стирка ковров</a></li>
+                        <li class="masters-list__item"><a href="" class="link">Ремонт техники</a></li>
+                        <li class="masters-list__item"><a href="" class="link">Уборка дома</a></li>
+                        <li class="masters-list__item"><a href="" class="link">Помощь с переездом</a></li>
                     </ul>
                 </div>
             </section>

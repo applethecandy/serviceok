@@ -8,9 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="{{ mix('css/style.css') }}" />
-    <script src="{{ mix('js/main.js') }}"></script>
-    <script src="{{ mix('js/swiper_question.js') }}"></script>
-    <script src="{{ mix('js/swiper_reviews.js') }}"></script>
+    <script defer src="{{ mix('js/main.js') }}"></script>
 
 </head>
 
@@ -22,19 +20,26 @@
                     <img src="{{ asset('/images/logo.svg') }}" alt="logo" />
                 </a>
 
-                <div class="header__city">
-                    <div class="header__city-select">
-                        <p class="link">Берлин</p>
+                <div class="header-cities">
+                    <div class="link header-cities__select">
+                        <p class="header-cities__selected">Берлин</p>
                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.03147 1.03147L5 5.06294L0.968532 1.03147" stroke="#0C1534" stroke-width="1.5" />
                         </svg>
                     </div>
+                    <div class="header-cities__list">
+                        <div class="header-cities__item">Берлин</div>
+                        <div class="header-cities__item">Мангейм</div>
+                        <div class="header-cities__item">Штутгарт</div>
+                        <div class="header-cities__item">Кёльн</div>
+                        <div class="header-cities__item">Дюссельдорф</div>
+                    </div>
                 </div>
 
                 <nav class="header__nav">
                     <a href="blog.html" class="link header__nav_item">Блог</a>
-                    <a href="./src/html/views/become_master.html" class="link header__nav_item">Стать исполнителем</a>
+                    <a href="become_master.html" class="link header__nav_item">Стать исполнителем</a>
 
                     <div class="header__phone header__nav_item">
                         <a href="tel:+78126039402" class="link">+7 (812) 603-94-02</a>
@@ -161,7 +166,7 @@
                             </div>
                         </div>
 
-                        <input type="submit" value="Далее" class="button-main">
+                        <input type="submit" value="Зарегистрироваться" class="button-main">
                     </form>
                 </div>
             </section>
