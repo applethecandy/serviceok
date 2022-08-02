@@ -14,25 +14,28 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/1', function () {
+Route::get('/', function () {
     return view('pages.index');
-});
-Route::get('/2', function () {
-    return view('pages.article');
-});
-Route::get('/3', function () {
-    return view('pages.blog');
-});
-Route::get('/4', function () {
-    return view('pages.impresum');
-});
-Route::get('/5', function () {
-    return view('pages.become_master');
-});
-Route::get('/6', function () {
-    return view('pages.questions');
+})->name('index');
+
+Route::prefix('posts')->group(function () {
+    Route::get('/1', function () {
+        return view('pages.article');
+    })->name('post.show');
+
+    Route::get('/', function () {
+        return view('pages.blog');
+    })->name('post.index');
 });
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-});
+Route::get('/impresum', function () {
+    return view('pages.impresum');
+})->name('impresum');
+
+Route::get('/become_master', function () {
+    return view('pages.become_master');
+})->name('become_master');
+
+Route::get('/quiz', function () {
+    return view('pages.questions');
+})->name('questions');
