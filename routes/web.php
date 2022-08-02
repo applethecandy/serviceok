@@ -32,8 +32,8 @@ Route::get('/impresum', function () {
     return view('pages.impresum');
 })->name('impresum');
 
-Route::get('/become_master', function () {
-    return view('pages.become_master');
+Route::get('/become-master', function () {
+    return view('pages.become-master');
 })->name('become_master');
 
 Route::get('/quiz', function () {
