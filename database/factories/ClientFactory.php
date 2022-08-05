@@ -20,7 +20,7 @@ class ClientFactory extends Factory
         return [
             'name' => fake()->name(),
             'phone' => fake()->e164PhoneNumber(),
-            'work_id' => Work::factory()->create()->id
+            // 'work_id' => Work::factory()->create()->id
         ];
     }
 }

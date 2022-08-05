@@ -18,7 +18,7 @@ class WorkFactory extends Factory
     public function definition()
     {
         return [
-            'service_id' => Service::factory()->create()->id,
+            // 'service_id' => Service::factory()->create()->id,
             'date' => fake()->date(),
             'time' => fake()->time(),
             'address' => fake()->address()
