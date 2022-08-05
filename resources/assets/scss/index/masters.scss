@@ -5,8 +5,15 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: 170px;
+    height: calc(600px - 100vw / 4);
+    min-height: 170px;
     &__item {
         margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    @media (max-width: 600px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: unset;
     }
 }
