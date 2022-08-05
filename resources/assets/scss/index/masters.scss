@@ -1,15 +1,12 @@
-.masters-section {
-	
-}
+.masters-section {}
 
 .masters-list {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	height: 170px;
-
-	&__item {
-		margin-bottom: 20px;
-	}
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 170px;
+    &__item {
+        margin-bottom: 20px;
+    }
 }

@@ -696,7 +696,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 170px;
 }
 .masters-list__item {
@@ -861,6 +861,7 @@ button {
 
 .impresum-section {
   padding-top: 20px;
+  overflow-wrap: anywhere;
 }
 
 .impresum__field {
@@ -943,16 +944,29 @@ button {
   align-items: center;
   margin-bottom: 30px;
 }
+@media (max-width: 600px) {
+  .blog-header {
+    flex-direction: column;
+  }
+}
 .blog-header .h2 {
   margin-right: 30px;
+}
+@media (max-width: 600px) {
+  .blog-header .h2 {
+    margin: 0px 0px 30px 0px;
+  }
 }
 .blog-header__crumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .blog-header__crumbs .text-medium,
 .blog-header__crumbs .blog-button {
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 .blog-header__crumbs .blog-button:nth-last-child(1) {
   margin-right: 0px;
