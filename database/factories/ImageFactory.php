@@ -17,7 +17,7 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            'source' => fake()->imageUrl()
+            'source' => 'plugs/blog-img.jpg'
         ];
     }
 }

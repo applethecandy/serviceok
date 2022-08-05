@@ -20,7 +20,7 @@
                 </x-header-with-checkmark>
 
                 <div class="article__img">
-                    <img src="{{ $post->image()->first()->source }}" alt="article-img" />
+                    <img src="/images/{{ $post->image()->first()->source }}" alt="article-img" />
                 </div>
 
                 <p class="blog-text">

@@ -20,7 +20,7 @@ class PostFactory extends Factory
     {
         return [
             'topic_id' => Topic::factory()->create()->id,
-            'image_id' => Image::factory()->create()->id,
+            //'image_id' => Image::factory()->create()->id,
             'title' => fake()->realText(25),
             'text' => fake()->realTextBetween(300, 1000)
         ];

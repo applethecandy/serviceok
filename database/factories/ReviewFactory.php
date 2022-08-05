@@ -18,7 +18,7 @@ class ReviewFactory extends Factory
     public function definition()
     {
         return [
-            'image_id' => Image::factory()->create()->id,
+            //'image_id' => Image::factory()->create()->id,
             'author' => fake()->name(),
             'text' => fake()->realText(150)
         ];

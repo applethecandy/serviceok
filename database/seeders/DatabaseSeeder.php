@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use \App\Models\Client;
+use App\Models\Image;
 use \App\Models\Master;
 use \App\Models\Service;
 use \App\Models\Post;
@@ -42,7 +43,7 @@ class DatabaseSeeder extends Seeder
             Master::factory()->hasAttached(Service::all()->random(3))->create();
         }
 
-        Post::factory(10)->create();
-        Review::factory(10)->create();
+        Post::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/blog-img.jpg'])]);
+        Review::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/review-avatar.jpg'])]);
     }
 }

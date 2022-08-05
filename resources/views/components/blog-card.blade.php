@@ -1,7 +1,7 @@
 <div {{ $attributes->merge(['class' => 'blog-card']) }}>
     <a href="{{ route('post.show', ['id' => $post->id]) }}" class="blog-card__link">
         <div class="blog-card__img">
-            <img src="{{ $getImageSource($post) }}" alt="blog-img" />
+            <img src="/images/{{ $getImageSource($post) }}" alt="blog-img" />
         </div>
 
         <div class="blog-card__description">
