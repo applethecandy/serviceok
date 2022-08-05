@@ -20,8 +20,15 @@
 
                                 <div class="questions-steps__input">
                                     <div class="custom-select" id="custom-select-1">
-                                        <input type="text" name="service" placeholder="Чем вам помочь?"
-                                            class="input-field custom-select__input" />
+                                        <input type="text" name="service" id="service" placeholder="Чем вам помочь?"
+                                            class="input-field custom-select__input" list="services"
+                                            value="{{ request()->service ?? '' }}" />
+                                        <datalist id="services">
+                                            @foreach ($services as $service)
+                                                <option value="{{ $service->title }}">
+                                                </option>
+                                            @endforeach
+                                        </datalist>
                                         <div class="custom-select__list"></div>
                                     </div>
                                 </div>
@@ -30,7 +37,7 @@
                                     <p class="text-small">Например:</p>
                                     <div class="find-service__list">
                                         @foreach ($services->take(4) as $service)
-                                            <div class="blog-button banner-btn" data-service="1">{{ $service->title }}</div>
+                                            <x-service-example-button :service="$service" />
                                         @endforeach
                                     </div>
                                 </div>

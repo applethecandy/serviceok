@@ -8,11 +8,12 @@
 
                 <p class="text-medium">Поможем найти надёжного исполнителя для ваших задач</p>
 
-                <form action="" class="find-service">
-                    <label for="input-field">Начните вводить название услуги</label>
+                <form action="quiz" class="find-service">
+                    <label for="service">Начните вводить название услуги</label>
                     <div class="custom-select" id="custom-select-1">
-                        <input type="text" placeholder="Чем вам помочь?" class="input-field custom-select__input" />
-
+                        <input type="text" placeholder="Чем вам помочь?" name="service" id="service"
+                            class="input-field custom-select__input" list="services" />
+                        <x-service-datalist :services="$services" />
                         <div class="custom-select__list"></div>
                     </div>
 
@@ -21,7 +22,7 @@
                             <p class="text-small">Например:</p>
                             <div class="find-service__list">
                                 @foreach ($services->take(4) as $service)
-                                    <div class="blog-button banner-btn" data-service="1">{{ $service->title }}</div>
+                                    <x-service-example-button :service="$service" />
                                 @endforeach
                             </div>
                         </div>
