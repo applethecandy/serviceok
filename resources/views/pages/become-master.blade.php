@@ -13,28 +13,31 @@
                 вам будут поступать звонки с заявками от наших специалистов.
             </p>
 
-            <form action="" class="master-form">
+            <form action="{{ route('master.store') }}" class="master-form" method="POST">
                 <div class="master-form__data">
                     <h4 class="h4">Ваши данные</h4>
+                    @csrf
+                    @method('PUT')
 
                     <div class="master-form__field">
-                        <label for="firstName">Имя</label>
-                        <input type="text" class="input-field" placeholder="Ваше имя" id="firstName" />
+                        <label for="name">Имя</label>
+                        <input type="text" class="input-field" name="name" placeholder="Ваше имя" id="name" />
                     </div>
 
                     <div class="master-form__field">
-                        <label for="secondName">Фамилия</label>
-                        <input type="text" class="input-field" placeholder="Ваша фамилия" id="secondName" />
+                        <label for="surname">Фамилия</label>
+                        <input type="text" class="input-field" name="surname" placeholder="Ваша фамилия"
+                            id="surname" />
                     </div>
 
                     <div class="master-form__field">
                         <label for="city">Город, в котором <br> вы будете работать</label>
-                        <input type="text" class="input-field" placeholder="Город" id="city" />
+                        <input type="text" class="input-field" name="city" placeholder="Город" id="city" />
                     </div>
 
                     <div class="master-form__field">
-                        <label for="number">Номер телефона</label>
-                        <input type="text" class="input-field" placeholder="+49" id="number" />
+                        <label for="phone">Номер телефона</label>
+                        <input type="text" class="input-field" name="phone" placeholder="+49" id="phone" />
                     </div>
                 </div>
 
@@ -42,54 +45,13 @@
                     <h4 class="h4">Услуги, которые вы можете оказывать</h4>
 
                     <div class="master-form__boxes">
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Установка или замена сантехники
-                        </label>
-
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Срочная помощь при аварии
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Ремонт сантехники
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Установка или замена сантехники
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Установка или замена сантехники
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Срочная помощь при аварии
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Ремонт сантехники
-                        </label>
-
-                        <label class="check">
-                            <input type="checkbox" />
-                            <span class="checkmark"></span>
-                            Установка или замена сантехники
-                        </label>
+                        @foreach ($services as $service)
+                            <label class="check">
+                                <input type="checkbox" name="services[]" value="{{ $service->id }}" />
+                                <span class="checkmark"></span>
+                                {{ $service->title }}
+                            </label>
+                        @endforeach
                     </div>
                 </div>
 

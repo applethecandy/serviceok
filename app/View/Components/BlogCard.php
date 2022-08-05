@@ -6,14 +6,21 @@ use Illuminate\View\Component;
 
 class BlogCard extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $post;
+
+    public function __construct($post)
     {
-        //
+        $this->post = $post;
+    }
+
+    public function getImageSource($post)
+    {
+        return $post->image()->first()->source;
+    }
+
+    public function getTopicName($post)
+    {
+        return $post->topic()->first()->name;
     }
 
     /**

@@ -20,10 +20,9 @@
                         <div class="find-service__examples">
                             <p class="text-small">Например:</p>
                             <div class="find-service__list">
-                                <div class="blog-button banner-btn" data-service="1">Стирка ковров</div>
-                                <div class="blog-button banner-btn" data-service="1">Ремонт техники</div>
-                                <div class="blog-button banner-btn" data-service="1">Уборка дома</div>
-                                <div class="blog-button banner-btn" data-service="1">Помощь с переездом</div>
+                                @foreach ($services->take(4) as $service)
+                                    <div class="blog-button banner-btn" data-service="1">{{ $service->title }}</div>
+                                @endforeach
                             </div>
                         </div>
 
@@ -45,10 +44,9 @@
             </x-header-with-checkmark>
 
             <ul class="masters-list">
-                <x-masters-list-item>Стирка ковров</x-masters-list-item>
-                <x-masters-list-item>Ремонт техники</x-masters-list-item>
-                <x-masters-list-item>Уборка дома</x-masters-list-item>
-                <x-masters-list-item>Помощь с переездом</x-masters-list-item>
+                @foreach ($services as $service)
+                    <x-masters-list-item :service="$service" />
+                @endforeach
             </ul>
         </div>
     </section>
@@ -73,7 +71,7 @@
 
                 <div class="request__buttons">
                     <a href="tel:tel:+78126039402" class="button-main">Позвонить</a>
-                    <a href="{{ route('questions') }}" class="button">Оставить заявку</a>
+                    <a href="{{ route('work.create') }}" class="button">Оставить заявку</a>
                 </div>
             </div>
 
@@ -92,9 +90,9 @@
 
         <div class="reviews-swiper">
             <div class="swiper-wrapper">
-                @for ($i = 0; $i < 10; $i++)
-                    <x-review />
-                @endfor
+                @foreach ($reviews->take(10) as $review)
+                    <x-review :review="$review" />
+                @endforeach
             </div>
         </div>
     </section>
@@ -106,9 +104,13 @@
             </x-header-with-checkmark>
 
             <div class="main-blogs">
-                <x-blog-card />
-                <x-blog-card />
-                <x-blog-card class="blog-card_big" />
+                @foreach ($posts->take(3) as $index => $post)
+                    @if ($index === 2)
+                        <x-blog-card class="blog-card_big" :post="$post" />
+                    @else
+                        <x-blog-card :post="$post" />
+                    @endif
+                @endforeach
             </div>
         </div>
     </section>
