@@ -1,0 +1,11 @@
+.alert-message {
+  padding: 5px 0px;
+  text-align: center;
+  color: white;
+}
+.alert-message__success {
+  background: mediumseagreen;
+}
+.alert-message__error {
+  background: indianred;
+}

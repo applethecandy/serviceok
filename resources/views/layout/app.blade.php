@@ -8,6 +8,7 @@
     <title>ServiceOK</title>
 
     <link rel="stylesheet" type="text/css" href="{{ mix('css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ mix('css/custom.css') }}" />
     <script defer src="{{ mix('js/main.js') }}"></script>
 </head>
 
@@ -39,7 +40,7 @@
 
                 <nav class="header__nav">
                     <a href="{{ route('post.index') }}" class="link header__nav_item">Блог</a>
-                    <a href="{{ route('become_master') }}" class="link header__nav_item">Стать исполнителем</a>
+                    <a href="{{ route('master.create') }}" class="link header__nav_item">Стать исполнителем</a>
 
                     <div class="header__phone header__nav_item">
                         <a href="tel:+78126039402" class="link">+7 (812) 603-94-02</a>
@@ -61,6 +62,13 @@
             </div>
         </header>
         <main>
+            @forelse ($errors->all() as $error)
+                <div class="alert-message alert-message__error">{{ __($error) }}</div>
+            @empty
+                @if (Session::has('message'))
+                    <div class="alert-message alert-message__success">{{ session('message') }}</div>
+                @endif
+            @endforelse
             @yield('content')
         </main>
         <footer class="footer">
@@ -71,7 +79,7 @@
                     </a>
 
                     <a href="{{ route('index') }}" class="link">Главная</a>
-                    <a href="{{ route('become_master') }}" class="link">Стать исполнителем</a>
+                    <a href="{{ route('master.create') }}" class="link">Стать исполнителем</a>
                     <a href="{{ route('impresum') }}" class="link">Impresum</a>
                 </nav>
 
