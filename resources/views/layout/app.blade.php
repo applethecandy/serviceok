@@ -22,7 +22,7 @@
 
                 <div class="header-cities">
                     <div class="link header-cities__select">
-                        <p class="header-cities__selected">Берлин</p>
+                        <p class="header-cities__selected">@lang('layout/app.cities.berlin')</p>
                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.03147 1.03147L5 5.06294L0.968532 1.03147" stroke="#0C1534" stroke-width="1.5" />
@@ -30,21 +30,21 @@
                     </div>
 
                     <div class="header-cities__list">
-                        <div class="header-cities__item">Берлин</div>
-                        <div class="header-cities__item">Мангейм</div>
-                        <div class="header-cities__item">Штутгарт</div>
-                        <div class="header-cities__item">Кёльн</div>
-                        <div class="header-cities__item">Дюссельдорф</div>
+                        <div class="header-cities__item">@lang('layout/app.cities.berlin')</div>
+                        <div class="header-cities__item">@lang('layout/app.cities.mannheim')</div>
+                        <div class="header-cities__item">@lang('layout/app.cities.stuttgart')</div>
+                        <div class="header-cities__item">@lang('layout/app.cities.cologne')</div>
+                        <div class="header-cities__item">@lang('layout/app.cities.dusseldorf')</div>
                     </div>
                 </div>
 
                 <nav class="header__nav">
-                    <a href="{{ route('post.index') }}" class="link header__nav_item">Блог</a>
-                    <a href="{{ route('master.create') }}" class="link header__nav_item">Стать исполнителем</a>
+                    <a href="{{ route('post.index') }}" class="link header__nav_item">@lang('layout/app.blog')</a>
+                    <a href="{{ route('master.create') }}" class="link header__nav_item">@lang('layout/app.became_master')</a>
 
                     <div class="header__phone header__nav_item">
                         <a href="tel:+78126039402" class="link">+7 (812) 603-94-02</a>
-                        <span class="free-call">звонок бесплатный</span>
+                        <span class="free-call">@lang('layout/app.call_is_free')</span>
                     </div>
                 </nav>
 
@@ -78,18 +78,18 @@
                         <img src="{{ asset('/images/logo.svg') }}" alt="logo" />
                     </a>
 
-                    <a href="{{ route('index') }}" class="link">Главная</a>
-                    <a href="{{ route('master.create') }}" class="link">Стать исполнителем</a>
-                    <a href="{{ route('impresum') }}" class="link">Impresum</a>
+                    <a href="{{ route('index') }}" class="link">@lang('layout/app.main_page')</a>
+                    <a href="{{ route('master.create') }}" class="link">@lang('layout/app.became_master')</a>
+                    <a href="{{ route('impresum') }}" class="link">@lang('layout/app.impressum')</a>
                 </nav>
 
                 <div class="footer__contacts">
-                    <h4 class="h4">Контакты</h4>
+                    <h4 class="h4">@lang('layout/app.contacts')</h4>
 
                     <div class="footer__phone">
                         <a href="tel:+78126039402" class="link">+7 (812) 603-94-02</a>
-                        <span class="free-call">звонок бесплатный</span>
-                        <span class="footer__time">с 9:00 до 21:00</span>
+                        <span class="free-call">@lang('layout/app.call_is_free')</span>
+                        <span class="footer__time">@lang('layout/app.from') 9:00 @lang('layout/app.to') 21:00</span>
                     </div>
 
                     <a href="mail:service_ok@gmail.com" class="link link_red">service_ok@gmail.com</a>
@@ -123,8 +123,8 @@
                 </div>
 
                 <div class="footer__policy">
-                    <a href="" class="link link_gray">Условия пользования</a>
-                    <a href="" class="link link_gray">Политика конфиденциальности</a>
+                    <a href="" class="link link_gray">@lang('layout/app.terms')</a>
+                    <a href="" class="link link_gray">@lang('layout/app.privacy')</a>
                 </div>
             </div>
         </footer>

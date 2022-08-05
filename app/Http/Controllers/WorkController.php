@@ -24,6 +24,6 @@ class WorkController extends Controller
     public function store(WorkRequest $request)
     {
         $this->work->createWork($request);
-        return redirect()->route('work.create')->with('message', __('work.created'));
+        return redirect()->route('work.create')->with('message', __('messages.work.created'));
     }
 }

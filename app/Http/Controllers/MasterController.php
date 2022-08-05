@@ -24,6 +24,6 @@ class MasterController extends Controller
     public function store(MasterRequest $request)
     {
         $this->master->createMaster($request);
-        return redirect()->route('master.create')->with('message', __('master.created'));
+        return redirect()->route('master.create')->with('message', __('messages.master.created'));
     }
 }

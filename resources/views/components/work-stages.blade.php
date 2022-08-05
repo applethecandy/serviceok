@@ -1,16 +1,16 @@
 <div class="work-stages">
     <div class="work-stages__item">
-        <h4 class="h4"><span class="link_red">01.</span> Опишите задачу</h4>
-        <p class="text-big">Это бесплатно и не требует регистрации на сайте</p>
+        <h4 class="h4"><span class="link_red">01.</span> @lang('components.work_stages.title_1')</h4>
+        <p class="text-big">@lang('components.work_stages.description_1')</p>
     </div>
 
     <div class="work-stages__item">
-        <h4 class="h4"><span class="link_red">02.</span> Ожидайте звонка</h4>
-        <p class="text-big">В выбранное вами время с вами свяжется специалист</p>
+        <h4 class="h4"><span class="link_red">02.</span> @lang('components.work_stages.title_2')</h4>
+        <p class="text-big">@lang('components.work_stages.description_2')</p>
     </div>
 
     <div class="work-stages__item">
-        <h4 class="h4"><span class="link_red">03.</span> Вам помогут</h4>
-        <p class="text-big">После обсуждения условий получите нужную вам услугу</p>
+        <h4 class="h4"><span class="link_red">03.</span> @lang('components.work_stages.title_3')</h4>
+        <p class="text-big">@lang('components.work_stages.description_3')</p>
     </div>
 </div>

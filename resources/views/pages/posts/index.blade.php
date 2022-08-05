@@ -5,11 +5,11 @@
         <div class="container">
             <div class="blog-header">
                 <x-header-with-checkmark nogap>
-                    Блог Service OK
+                    @lang('pages/posts.blog')
                 </x-header-with-checkmark>
 
                 <div class="blog-header__crumbs">
-                    <span class="text-medium">Темы:</span>
+                    <span class="text-medium">@lang('pages/posts.themes')</span>
                     @foreach ($topics->take(4) as $topic)
                         <button class="blog-button">{{ $topic->name }}</button>
                     @endforeach

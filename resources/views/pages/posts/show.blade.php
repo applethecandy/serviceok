@@ -28,7 +28,7 @@
                 </p>
 
                 <div class="article__share">
-                    <p class="text-big">Поделиться:</p>
+                    <p class="text-big">@lang('pages/posts.share')</p>
                     <svg width="34" height="35" viewBox="0 0 34 35" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -39,7 +39,7 @@
             </article>
 
             <div class="more-articles">
-                <h4 class="h4">Читайте также:</h4>
+                <h4 class="h4">@lang('pages/posts.also_read')</h4>
 
                 <div class="more-articles__container">
                     @foreach ($posts->take(3) as $post)

@@ -3,7 +3,10 @@ import swiper_questions from "./questions.js";
 import customSelect from "./customSelect.js";
 import "../scss/style.scss";
 
-const cities = ["Берлин", "Магнейм", "Штутгарт", "Кёльн", "Дюссельдорф"];
+const cities = [];
+for (let i of document.querySelector('.header-cities__list').children) {
+    cities.push(i.textContent);
+}
 
 const burgerOpen = () => {
     const burger = document.querySelector(".nav-toggle");

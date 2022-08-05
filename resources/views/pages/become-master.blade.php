@@ -4,45 +4,45 @@
     <section class="section registration-section">
         <div class="container">
             <x-header-with-checkmark>
-                Станьте исполнителем
+                @lang('pages/become_master.title')
             </x-header-with-checkmark>
 
             <p class="text-big">
-                ServiceOK поможет вам найти новых клиентов и зарабатывать на выполнении услуг. Зарегистрируйтесь
-                на сайте и после потверждения ваших данных,
-                вам будут поступать звонки с заявками от наших специалистов.
+                @lang('pages/become_master.description')
             </p>
 
             <form action="{{ route('master.store') }}" class="master-form" method="POST">
                 <div class="master-form__data">
-                    <h4 class="h4">Ваши данные</h4>
+                    <h4 class="h4">@lang('pages/become_master.your_data')</h4>
                     @csrf
                     @method('PUT')
 
                     <div class="master-form__field">
-                        <label for="name">Имя</label>
-                        <input type="text" class="input-field" name="name" placeholder="Ваше имя" id="name" />
+                        <label for="name">@lang('pages/become_master.name')</label>
+                        <input type="text" class="input-field" name="name" placeholder="@lang('pages/become_master.your_name')"
+                            id="name" />
                     </div>
 
                     <div class="master-form__field">
-                        <label for="surname">Фамилия</label>
-                        <input type="text" class="input-field" name="surname" placeholder="Ваша фамилия"
+                        <label for="surname">@lang('pages/become_master.surname')</label>
+                        <input type="text" class="input-field" name="surname" placeholder="@lang('pages/become_master.your_surname')"
                             id="surname" />
                     </div>
 
                     <div class="master-form__field">
-                        <label for="city">Город, в котором <br> вы будете работать</label>
-                        <input type="text" class="input-field" name="city" placeholder="Город" id="city" />
+                        <label for="city">@lang('pages/become_master.city_1') <br> @lang('pages/become_master.city_2')</label>
+                        <input type="text" class="input-field" name="city" placeholder="@lang('pages/become_master.your_city')"
+                            id="city" />
                     </div>
 
                     <div class="master-form__field">
-                        <label for="phone">Номер телефона</label>
+                        <label for="phone">@lang('pages/become_master.phone')</label>
                         <input type="text" class="input-field" name="phone" placeholder="+49" id="phone" />
                     </div>
                 </div>
 
                 <div class="master-form__services">
-                    <h4 class="h4">Услуги, которые вы можете оказывать</h4>
+                    <h4 class="h4">@lang('pages/become_master.services')</h4>
 
                     <div class="master-form__boxes">
                         @foreach ($services as $service)
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <input type="submit" value="Зарегистрироваться" class="button-main">
+                <input type="submit" value="@lang('pages/become_master.register')" class="button-main">
             </form>
         </div>
     </section>
