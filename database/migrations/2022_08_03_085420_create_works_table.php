@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('works', function (Blueprint $table) {
             $table->id();
             $table->foreignId('service_id')->constrained()->onDelete('cascade');
-            $table->dateTime('date_time');
+            $table->date('date');
+            $table->time('time');
             $table->text('address');
             $table->timestamps();
         });

@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\MasterController;
+use App\Http\Controllers\StaticPageController;
+use App\Http\Controllers\WorkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,28 +19,21 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-})->name('index');
+Route::get('/', HomeController::class)->name('index');
 
 Route::prefix('posts')->group(function () {
-    Route::get('/1', function () {
-        return view('pages.article');
-    })->name('post.show');
-
-    Route::get('/', function () {
-        return view('pages.blog');
-    })->name('post.index');
+    Route::get('/', [PostController::class, 'index'])->name('post.index');
+    Route::get('{id}', [PostController::class, 'show'])->name('post.show');
 });
 
-Route::get('/impresum', function () {
-    return view('pages.impresum');
-})->name('impresum');
+Route::get('impresum', [StaticPageController::class, 'impresum'])->name('impresum');
 
-Route::get('/become-master', function () {
-    return view('pages.become-master');
-})->name('become_master');
+Route::prefix('quiz')->group(function () {
+    Route::get('/', [WorkController::class, 'create'])->name('work.create');
+    Route::put('store', [WorkController::class, 'store'])->name('work.store');
+});
 
-Route::get('/quiz', function () {
-    return view('pages.questions');
-})->name('questions');
+Route::prefix('become-master')->group(function () {
+    Route::get('/', [MasterController::class, 'create'])->name('master.create');
+    Route::put('store', [MasterController::class, 'store'])->name('master.store');
+});

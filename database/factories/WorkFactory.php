@@ -19,7 +19,8 @@ class WorkFactory extends Factory
     {
         return [
             'service_id' => Service::factory()->create()->id,
-            'date_time' => fake()->dateTime(),
+            'date' => fake()->date(),
+            'time' => fake()->time(),
             'address' => fake()->address()
         ];
     }
