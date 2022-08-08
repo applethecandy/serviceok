@@ -13,4 +13,9 @@ class Topic extends Model
     {
         return $this->hasMany(Post::class);
     }
+
+    static function findByName($name)
+    {
+        return Topic::where('name', $name)->firstOrFail();
+    }
 }

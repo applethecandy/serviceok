@@ -18,4 +18,9 @@ class Post extends Model
     {
         return $this->belongsTo(Image::class);
     }
+
+    static function themeFilter($theme)
+    {
+        return $theme ? Post::whereBelongsTo(Topic::findByName($theme)) : Post::latest();
+    }
 }

@@ -8,10 +8,10 @@ use App\Models\Topic;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         return view('pages.posts.index', [
-            'posts' => Post::latest()->paginate(7),
+            'posts' => Post::themeFilter($request['theme'])->paginate(7),
             'topics' => Topic::all()
         ]);
     }

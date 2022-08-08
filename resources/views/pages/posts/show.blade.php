@@ -5,7 +5,8 @@
         <div class="container">
             <article class="article">
                 <div class="article__crums">
-                    <span class="blog-card-filter" id="blog-topic">{{ $post->topic()->first()->name }}</span>
+                    <a href="{{ route('post.index', ['theme' => $post->topic()->first()->name]) }}" class="blog-card-filter"
+                        id="blog-topic">{{ $post->topic()->first()->name }}</a>
                     <span class="blog-card-filter" id="blog-date"><svg width="14" height="14" viewBox="0 0 14 14"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
