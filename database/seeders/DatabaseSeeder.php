@@ -3,14 +3,15 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use \App\Models\Client;
-use App\Models\Image;
-use \App\Models\Master;
-use \App\Models\Service;
-use \App\Models\Post;
-use \App\Models\Review;
+use App\Models\User;
 use App\Models\Work;
+use \App\Models\Post;
+use App\Models\Image;
+use \App\Models\Client;
+use \App\Models\Master;
+use \App\Models\Review;
+use \App\Models\Service;
+use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Factories\Sequence;
 
 class DatabaseSeeder extends Seeder
@@ -45,5 +46,7 @@ class DatabaseSeeder extends Seeder
 
         Post::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/blog-img.jpg'])]);
         Review::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/review-avatar.jpg'])]);
+
+        User::factory()->create();
     }
 }

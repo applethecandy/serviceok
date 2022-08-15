@@ -4,9 +4,12 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\WorkController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\MasterController;
 use App\Http\Controllers\StaticPageController;
-use App\Http\Controllers\WorkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +40,9 @@ Route::prefix('become-master')->group(function () {
     Route::get('/', [MasterController::class, 'create'])->name('master.create');
     Route::put('store', [MasterController::class, 'store'])->name('master.store');
 });
+
+Route::get('admin', [AdminController::class, 'index'])->name('admin.index')->middleware('auth');
+Route::get('admin/logout', [LogoutController::class, 'logout'])->name('admin.logout')->middleware('auth');
+
+Route::get('admin/login', [LoginController::class, 'show'])->name('admin.login');
+Route::post('admin/login', [LoginController::class, 'login'])->name('admin.process');
