@@ -13,7 +13,8 @@ class Work extends Model
         'service_id',
         'date',
         'time',
-        'address'
+        'address',
+        'comment'
     ];
 
     public function service()
@@ -29,5 +30,11 @@ class Work extends Model
     public function createWork($request)
     {
         return Service::firstWhere('title', $request->service)->works()->create($request->validated())->client()->create($request->validated());
+    }
+
+    static function updateComment($request)
+    {
+        $result = Work::find($request->id)->update(['comment' => $request->comment]);
+        return $result ? $request->comment : $result;
     }
 }

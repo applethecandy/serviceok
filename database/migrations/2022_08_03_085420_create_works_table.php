@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('date');
             $table->time('time');
             $table->text('address');
+            $table->text('comment')->nullable();
             $table->timestamps();
         });
     }
