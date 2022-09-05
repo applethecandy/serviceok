@@ -39,12 +39,15 @@ const displayCities = (array) => {
     const activeCity = document.querySelector(".header-cities__selected");
     citiesList.innerHTML = "";
 
+    window.sessionStorage.getItem('city') ? activeCity.innerHTML = window.sessionStorage.getItem('city') : null;
+
     array.forEach((city) => {
         const elem = document.createElement("div");
         elem.innerHTML = city;
         elem.classList.add("header-cities__item");
         elem.addEventListener("click", () => {
             activeCity.innerHTML = city;
+            window.sessionStorage.setItem('city', city);
         });
         citiesList.appendChild(elem);
     });

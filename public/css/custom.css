@@ -1,11 +1,1 @@
-.alert-message {
-  padding: 5px 0px;
-  text-align: center;
-  color: white;
-}
-.alert-message__success {
-  background: mediumseagreen;
-}
-.alert-message__error {
-  background: indianred;
-}
+.alert-message{color:#fff;padding:5px 0;text-align:center}.alert-message__success{background:#3cb371}.alert-message__error{background:#cd5c5c}
