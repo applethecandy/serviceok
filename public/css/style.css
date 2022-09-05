@@ -361,6 +361,17 @@ button {
   font-weight: 400;
 }
 
+.blog-text p,
+.blog-text ul,
+.blog-text li,
+.blog-text h2 {
+    margin-top: 1em;
+}
+
+.blog-text h2 {
+    font-size: 1.2em;
+}
+
 .blog-card-filter {
   font-family: inherit;
   font-weight: 500;
