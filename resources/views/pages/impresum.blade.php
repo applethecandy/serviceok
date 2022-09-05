@@ -29,7 +29,8 @@
                 <a href="tel:+8853888888" class="h4 link-green">+8 853 88 88 88</a>
             </div>
 
-            <div class="impresum__field">
+            {{-- @mark socials temporary hidden --}}
+            {{-- <div class="impresum__field">
                 <h4 class="h4">Finden Sie uns bei:</h4>
             </div>
 
@@ -48,7 +49,7 @@
                 <h4 class="h4">YouTube</h4>
                 <a href=""
                     class="h4 link-green">https://www.youtube.com/channel/UCgodxBbqjJz9RNUlv5NuayA/featured</a>
-            </div>
+            </div> --}}
         </div>
     </section>
 @endsection

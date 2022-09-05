@@ -94,7 +94,7 @@
 
                     <a href="mail:service_ok@gmail.com" class="link link_red">service_ok@gmail.com</a>
 
-                    <div class="footer__socials">
+                    <div class="footer__socials" style="display: none;"> {{-- @mark socials temporary hidden --}}
                         <a href="" class="social-link"><svg width="34" height="35" viewBox="0 0 34 35"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="34" height="35" fill="#A2B6C8" />
