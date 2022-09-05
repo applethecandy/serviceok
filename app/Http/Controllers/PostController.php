@@ -20,7 +20,7 @@ class PostController extends Controller
     {
         return view('pages.posts.show', [
             'posts' => Post::latest()->get(),
-            'post' => Post::find($id)
+            'post' => Post::findOrFail($id)
         ]);
     }
 }
