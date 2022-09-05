@@ -936,6 +936,9 @@ button {
 .article__share .text-big {
   margin-right: 10px;
 }
+.article__share svg:hover {
+    cursor: pointer;
+}
 @media (max-width: 900px) {
   .article {
     margin-right: 0px;
