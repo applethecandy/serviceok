@@ -17,16 +17,16 @@
                 </div>
 
                 <x-header-with-checkmark>
-                    {{ $post->title }}
+                    {!! $post->title !!}
                 </x-header-with-checkmark>
 
                 <div class="article__img">
                     <img src="/images/{{ $post->image()->first()->source }}" alt="article-img" />
                 </div>
 
-                <p class="blog-text">
-                    {{ $post->text }}
-                </p>
+                <span class="blog-text">
+                    {!! $post->text !!}
+                </span>
 
                 <div class="article__share">
                     <p class="text-big">@lang('pages/posts.share')</p>
