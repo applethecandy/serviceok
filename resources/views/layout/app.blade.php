@@ -123,8 +123,8 @@
                 </div>
 
                 <div class="footer__policy">
-                    <a href="" class="link link_gray">@lang('layout/app.terms')</a>
-                    <a href="" class="link link_gray">@lang('layout/app.privacy')</a>
+                    <a href="/documents/Nutzungsbedingungen.docx" class="link link_gray">@lang('layout/app.terms')</a>
+                    <a href="/documents/Datenschutzerklärung.docx" class="link link_gray">@lang('layout/app.privacy')</a>
                 </div>
             </div>
         </footer>
