@@ -11,4 +11,14 @@ class StaticPageController extends Controller
     {
         return view('pages.impresum');
     }
+
+    public function terms()
+    {
+        return view('pages.terms');
+    }
+
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
 }

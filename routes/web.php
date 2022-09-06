@@ -30,6 +30,8 @@ Route::prefix('posts')->group(function () {
 });
 
 Route::get('impresum', [StaticPageController::class, 'impresum'])->name('impresum');
+Route::get('nutzungsbedingungen', [StaticPageController::class, 'terms'])->name('terms');
+Route::get('datenschutzbestimmungen', [StaticPageController::class, 'privacy'])->name('privacy');
 
 Route::prefix('quiz')->group(function () {
     Route::get('/', [WorkController::class, 'create'])->name('work.create');
