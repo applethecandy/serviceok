@@ -40,37 +40,37 @@ class DatabaseSeeder extends Seeder
         $reviews = [
             [
                 'image' => 'plugs/review1.png',
-                'author' => 'John Doe',
+                'author' => 'Karlheinz Koenig',
                 'text' => 'Ich habe einen Umzugsservice für eine neue Wohnung bestellt. Großartig, ich empfehle es! Alles wurde sehr schnell abgewickelt.'
             ],
             [
                 'image' => 'plugs/review2.png',
-                'author' => 'John Doe',
+                'author' => 'Adolph Wagner',
                 'text' => 'Kontaktiert, um den Heizkörper im Zimmer zu wechseln. Alles wie abgesprochen. Sehr qualifiziert. Er hat genau das getan, was nötig war, und meine Kosten minimiert.'
             ],
             [
                 'image' => 'plugs/review3.png',
-                'author' => 'John Doe',
+                'author' => 'Walther Simen',
                 'text' => 'Die Waschmaschine musste repariert werden, manchmal machte sie ein lautes Geräusch, manchmal schaltete sie sich nicht ein. Die Arbeit wurde gut ausgeführt. Keine Beschwerden. Wir haben sogar einen Kalkentferner als Geschenk erhalten.'
             ],
             [
                 'image' => 'plugs/review4.png',
-                'author' => 'John Doe',
+                'author' => 'Miriam Schmitz',
                 'text' => 'Ich habe viele Dinge bei Service OK bestellt. Wände verdrahten, Türen einbauen und Eichenparkett restaurieren. Alles war großartig!'
             ],
             [
                 'image' => 'plugs/review5.png',
-                'author' => 'John Doe',
+                'author' => 'Josef Fiedler',
                 'text' => 'Ich habe Service OK getestet, um jemanden mit geraden Händen anzurufen und den Wasserhahn im Bad zu reparieren. Das gefällt mir! Bequem!'
             ],
             [
                 'image' => 'plugs/review6.png',
-                'author' => 'John Doe',
+                'author' => 'Inken Bieber',
                 'text' => 'Ich hatte am Montagabend nach der Arbeit ein kleines Problem: Der Schlüssel brach im Türschloss ab. Die Versuche, das zerbrochene Teil zu entfernen, waren erfolglos, deshalb rief ich den Service OK an. Nach etwa eineinhalb Stunden war der Techniker schon da. Er öffnete die Tür ohne Probleme. Es ist bequem, schnell und von hoher Qualität. Ich werde es wieder verwenden.'
             ],
             [
                 'image' => 'plugs/review7.png',
-                'author' => 'John Doe',
+                'author' => 'Leonard Solberg',
                 'text' => 'Der Dienst funktioniert perfekt, und ich habe bei zwei Bestellungen keine Probleme gehabt. Der technische Support antwortet sofort. Ein guter Tag mit einem guten Service OK.'
             ],
         ];
