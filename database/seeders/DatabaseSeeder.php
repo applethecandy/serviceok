@@ -39,39 +39,39 @@ class DatabaseSeeder extends Seeder
 
         $reviews = [
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review1.png',
                 'author' => 'John Doe',
-                'text' => 'Я массу всего заказывала на Service OK. Стены штробить под проводку, двери устанавливать и дубовый паркет восстанавливать. Всё было отлично!'
+                'text' => 'Ich habe einen Umzugsservice für eine neue Wohnung bestellt. Großartig, ich empfehle es! Alles wurde sehr schnell abgewickelt.'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review2.png',
                 'author' => 'John Doe',
-                'text' => 'Заказывал услугу, чтобы перевезти вещи на новую квартиру. Супер, рекомендую! Очень быстро всё перевезли.'
+                'text' => 'Kontaktiert, um den Heizkörper im Zimmer zu wechseln. Alles wie abgesprochen. Sehr qualifiziert. Er hat genau das getan, was nötig war, und meine Kosten minimiert.'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review3.png',
                 'author' => 'John Doe',
-                'text' => 'Обращался, чтобы поменять радиатор в комнате. Всё как договаривались. Очень квалифицированно. Сделали только то, что нужно, минимизировав мои расходы.'
+                'text' => 'Die Waschmaschine musste repariert werden, manchmal machte sie ein lautes Geräusch, manchmal schaltete sie sich nicht ein. Die Arbeit wurde gut ausgeführt. Keine Beschwerden. Wir haben sogar einen Kalkentferner als Geschenk erhalten.'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review4.png',
                 'author' => 'John Doe',
-                'text' => 'Понадобилось отремонтировать стиральную машинку, то работала с громким звуком, то иногда не включалась. Работа мастером была выполнена хорошо. Нареканий нет. И даже получили в подарок средство от накипи.'
+                'text' => 'Ich habe viele Dinge bei Service OK bestellt. Wände verdrahten, Türen einbauen und Eichenparkett restaurieren. Alles war großartig!'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review5.png',
                 'author' => 'John Doe',
-                'text' => 'Потестировал Service OK для вызова человека с прямыми руками и починки крана в ванной. Понравилось! Удобно!'
+                'text' => 'Ich habe Service OK getestet, um jemanden mit geraden Händen anzurufen und den Wasserhahn im Bad zu reparieren. Das gefällt mir! Bequem!'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review6.png',
                 'author' => 'John Doe',
-                'text' => 'Случилась у меня в понедельник вечером после работы небольшая неприятность: обломился ключ в замке двери. Попытки изъять обломок не увенчались успехом и я позвонил в Service OK. Буквально через через полтора часа мастер уже был у меня. Открыл дверь без проблем. Удобно, оперативно и качественно. Буду пользоваться ещё.'
+                'text' => 'Ich hatte am Montagabend nach der Arbeit ein kleines Problem: Der Schlüssel brach im Türschloss ab. Die Versuche, das zerbrochene Teil zu entfernen, waren erfolglos, deshalb rief ich den Service OK an. Nach etwa eineinhalb Stunden war der Techniker schon da. Er öffnete die Tür ohne Probleme. Es ist bequem, schnell und von hoher Qualität. Ich werde es wieder verwenden.'
             ],
             [
-                'image' => 'plugs/review-avatar.jpg',
+                'image' => 'plugs/review7.png',
                 'author' => 'John Doe',
-                'text' => 'Сервис работает прекрасно, и нареканий у меня за два заказа не вызвал. Техподдержка отзывается моментально. Хороший день с хорошим Service OK.'
+                'text' => 'Der Dienst funktioniert perfekt, und ich habe bei zwei Bestellungen keine Probleme gehabt. Der technische Support antwortet sofort. Ein guter Tag mit einem guten Service OK.'
             ],
         ];
 
@@ -93,196 +93,196 @@ class DatabaseSeeder extends Seeder
         $posts = [
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Чем уникален Service ОК',
+                'image' => 'plugs/article1.jpg',
+                'title' => 'Was macht Service OC einzigartig',
                 'text' => '
-                <p>Service ОК – это сервис по поиску мастеров для решения разных задач по хозяйству. Например, если у вас сломался смеситель на кухне, мы быстро найдем мастера, который всё починит.</p>
-<h2>1000 мастеров</h2>
-<p>В нашей базе более 1000 мастеров, которые готовы выполнить любые задачи по дому. У нас есть слесарь, электрик, мебельщик, маляр и многие другие, список постоянно пополняется. Не важно, что сломалось, Сервис ОК подберёт подходящего работника.</p>
-<h2>Всё просто</h2>
-<p>Наш сервис прост в обращении — вам не придется проходить долгую регистрацию и самому искать подходящего мастера. Все что нужно – это заполнить форму: описать свою проблему и указать адрес, мы сами свяжемся с подходящем мастером и отправим его к вам</p>
-<h2>Поддержка 24/7</h2>
-<p>Специалисты сервиса всегда на связи. После получения запроса, менеджер перезвонит вам, чтобы уточнить все детали заказа. Также вы можете позвонить сами и оставить заявку. Работаем 24/7, ответим даже в праздники и выходные. Поэтому если у вас что-то сломалось или срочно нужна уборка перед праздником, обращайтесь к нам, обязательно поможем.</p>
-<p><b>Сервис ОК для мастеров</b> – это сервис, который поможет найти дополнительную работу. Если вы умеете чинить, собирать мебель, штукатурить или проводить профессиональную уборку помещений, то мы найдем для вас работу.</p>
-<h2>Любая работа</h2>
-<p>У нас нет особых требований для мастеров. Даже если у вас нет специального образования, мы найдем для вас работу. Главное, чтобы вы знали своё дело. Посмотрите список мастеров, которые уже зарегистрировались в нашей системе и получают заказы — это электрики, штукатуры, мебельщики и другие работники. Вы точно найдете работу для себя.</p>
-<h2>Работы много</h2>
-<p>Работа есть всегда! Наша база клиентов постоянно растёт, поэтому вы не будете сидеть без дела, заказы поступают каждый день, даже в выходные и праздники. После регистрации про вас не забудут, менеджер перезвонит и уточнит все детали, а вы начнете получать первые заказы.</p>
-<h2>Всё просто</h2>
-<p>Стать сотрудник Service ОК очень просто. Всё, что нужно - это заполнить форму, в которой укажите свои данные и профессию. По выбранной профессии вы будете получать заказы. Если не нашли своей профессии в списке, то просто объясните менеджеру, что вы умеете, чтобы получать только те заказы, которые сможете выполнить.</p>
-<h2>Поддержка 24/7</h2>
-<p>Менеджеры Service ОК работают круглосуточно, поэтому все вопросы и проблемы решаются быстро. С нами вы не останетесь один на один с возражениями клиентов, мы поможем решить любую конфликтную ситуацию.</p>
-<p><b>Service ОК</b> – это уникальный сервис, объединяющий людей, которым нужен работник, и мастеров, которые ищут работу.</p>
+                <p><b>Service OK</b> – ein Handwerkerdienst für alle Arten von Aufgaben im Haushalt. Wenn zum Beispiel Ihr Küchenwasserhahn kaputt ist, können wir schnell einen Handwerker finden, der ihn repariert.</p>
+<h2>1000 Handwerker</h2>
+<p>Wir haben über 1.000 Handwerker in unserer Datenbank, die bereit sind, jede Hausarbeit zu erledigen. Wir haben einen Schlosser, einen Elektriker, einen Möbelbauer, einen Maler und viele mehr, die Liste wird ständig erweitert. Egal, was kaputt ist, Service OK findet den richtigen Handwerker.</p>
+<h2>So einfach ist das</h2>
+<p>Unser Service ist einfach zu nutzen - Sie müssen weder einen langen Registrierungsprozess durchlaufen noch selbst nach dem richtigen Handwerker suchen. Sie brauchen nur das Formular auszufüllen: Beschreiben Sie Ihr Problem und geben Sie Ihre Adresse an, und wir werden den richtigen Handwerker kontaktieren und zu Ihnen schicken</p>
+<h2>24/7-Unterstützung</h2>
+<p>Die Servicespezialisten sind immer in Kontakt. Nach Erhalt Ihrer Anfrage wird Sie ein Manager zurückrufen, um alle Einzelheiten Ihrer Bestellung zu klären. Sie können auch selbst anrufen und eine Anfrage hinterlassen. Wir arbeiten 24/7, auch an Feiertagen und Wochenenden. Wenn also etwas kaputt ist oder dringend vor dem Urlaub gereinigt werden muss, kontaktieren Sie uns bitte, wir werden Ihnen helfen.</p>
+<p><b>Service OK für Handwerker</b> – ein Dienst, der Ihnen hilft, zusätzliche Arbeit zu finden. Wenn Sie wissen, wie man repariert, Möbel zusammenbaut, verputzt oder professionell reinigt, finden wir Arbeit für Sie.</p>
+<h2>Jede Arbeit</h2>
+<p>Wir haben keine besonderen Anforderungen an Handwerker. Auch wenn Sie keine spezielle Ausbildung haben, finden wir Arbeit für Sie. Die Hauptsache ist, dass Sie Ihr Fachwissen haben. Sehen Sie sich die Liste der Handwerker an, die sich bereits registriert haben und Aufträge erhalten - Elektriker, Stuckateure, Möbelbauer und andere. Sie werden sicher Arbeit für Sie finden.</p>
+<h2>Es gibt viel zu tun</h2>
+<p>Es gibt immer etwas zu tun! Unser Kundenstamm wächst ständig, so dass Sie nicht untätig sein werden, denn die Aufträge gehen täglich ein, auch an Wochenenden und Feiertagen. Sobald Sie sich registriert haben, werden Sie nicht vergessen, ein Manager wird Sie zurückrufen und Ihnen alle Einzelheiten mitteilen, und Sie werden Ihre ersten Aufträge erhalten.</p>
+<h2>So einfach ist das</h2>
+<p>Es ist sehr einfach, Mitarbeiter des Service OC zu werden. Sie müssen lediglich ein Formular mit Ihren Daten und Ihrem Beruf ausfüllen. Sie erhalten Aufträge für den von Ihnen gewählten Beruf. Wenn Sie Ihren Beruf nicht auf der Liste finden, erklären Sie dem Manager einfach, was Sie gut können, damit Sie nur Aufträge erhalten, die Sie erfüllen können.</p>
+<h2>24/7 Unterstützung</h2>
+<p>Die Service-OK-Manager arbeiten rund um die Uhr, so dass alle Fragen und Probleme schnell gelöst werden können. Mit uns werden Sie mit Kundeneinwänden nicht allein gelassen, wir können Ihnen helfen, jede Konfliktsituation zu lösen.</p>
+<p><b>Service ОК</b> – ist ein einzigartiger Dienst, der Menschen, die einen Arbeiter brauchen, und Handwerker, die Arbeit suchen, zusammenbringt.</p>
                 ',
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Не ждите, пока сломается',
+                'image' => 'plugs/article2.jpg',
+                'title' => 'Warten Sie nicht, bis es kaputt geht',
                 'text' => '
-                <p>Поломка вещей – всегда неприятное событие, это причиняет множество неудобств и заставляет тратить деньги на ремонт или замену. Чтобы сэкономить время и деньги, необходимо проводить своевременную профилактику.</p>
-<p>Профилактика – это комплекс мер по поддержанию объекта в рабочем состоянии, что ведёт к длительности срока работоспособности.</p>
-<h2>Профилактика электроприборов:</h2>
+                <p>Eine Zerstörung ist immer ein unangenehmes Ereignis, das viele Unannehmlichkeiten verursacht und Sie zwingt, Geld für Reparaturen oder Ersatz auszugeben. Um Zeit und Geld zu sparen, ist eine rechtzeitige vorbeugende Wartung unerlässlich.</p>
+<p>Prävention ist eine Reihe von Maßnahmen, um ein Objekt in einem funktionsfähigen Zustand zu halten, was zu einer langen Lebensdauer führt.</p>
+<h2>Vorbeugende Wartung von Elektrogeräten:</h2>
 <ul>
-<li>1) <u>Общее правило для всех электроприборов</u> – если не используете технику, выключайте из сети. Это убережет от скачков напряжения, которое может привести к поломке или даже пожару.
-Зарядили телефон – отключите зарядное устройство от розетки, если вдруг напряжение скакнёт, пострадает не только зарядка, но и розетка.
-Если дома никого не будет несколько дней, обесточьте всю квартиру. Для этого достаточно выключить автоматы в щитках. Так вы защитите дом от скачков напряжения и короткого замыкания.</li>
-<li>2) <u>Электроплита</u> – используйте все 4 конфорки. Если использовать только 2 ближние, то нагрузка будет распределяться неравномерно, что приведет к перегреву блока управления.</li>
-<li>3) <u>Холодильник</u> – размораживайте раз в год. Даже самые современные холодильники требуют профилактики и чистки. Так холодильник прослужит дольше, а во время профилактики можно обнаружить какие-нибудь неполадки, которые не были заметны во время работы холодильника. Вызовите мастера, чтобы всё починить до того, как сломалось что-то серьезное.</li>
-<li>4) <u>Посудомоечная машина</u> — чистите раз в год. Регулярность чистки от известкового налета зависит от жесткости воды. Но не реже 1 раза в год. Используйте смягчители воды, если в вашем регионе очень жесткая вода. Также не забывайте избавляться от жира, для этого используйте жироудалители: без них посудомойка обрастёт жиром за 2-3 года.</li>
-<li>5) <u>Стиральная машина</u> – очищайте от накипи раз в полгода. Для этого запустите стирку на 90 градусах без белья. Чтобы усилить эффект, используйте лимонную кислоту или специальные средства для снятия накипи. Это продлит срок службы нагревательного элемента.</li>
-<li>6) <u>Кондиционер</u> – чистите от пыли раз в год. Кондиционер собирает внутри себя много пыли, его обязательно нужно чистить, иначе выйдет из строя. Для чистки лучше вызвать мастера, но можно попытаться это сделать самому:
+<li>1) <u>Allgemeine Regel für alle Elektrogeräte</u> – wenn Sie das Gerät nicht benutzen, ziehen Sie den Netzstecker. Dadurch werden Überspannungen vermieden, die Schäden oder sogar Brände verursachen können.<br>
+Wenn Sie Ihr Telefon aufgeladen haben, ziehen Sie den Stecker des Ladegeräts aus der Steckdose; wenn die Spannung plötzlich ansteigt, wird nicht nur das Ladegerät, sondern auch die Steckdose beschädigt.<br>
+Wenn ein paar Tage lang niemand zu Hause ist, schalten Sie die gesamte Wohnung stromlos. Sie können dies tun, indem Sie die Leistungsschalter in den Schalttafeln ausschalten. Dies schützt Ihr Haus vor Überspannungen und Kurzschlüssen.</li>
+<li>2) <u>Elektrokochfeld</u> – Verwenden Sie alle 4 Kochzonen. Wenn nur die 2 nächstgelegenen verwendet werden, wird die Last nicht gleichmäßig verteilt, was zu einer Überhitzung des Steuergeräts führt.</li>
+<li>3) <u>Kühlschrank</u> – einmal im Jahr abtauen. Auch die modernsten Kühlschränke müssen gewartet und gereinigt werden. Auf diese Weise verlängert sich die Lebensdauer Ihres Kühlschranks, und bei der Wartung können Sie Fehler entdecken, die bei der Benutzung Ihres Kühlschranks nicht aufgefallen sind. Rufen Sie einen Handwerker, damit alles repariert wird, bevor etwas Ernstes kaputt geht.</li>
+<li>4) <u>Geschirrspüler</u> — einmal im Jahr reinigen. Die Häufigkeit der Kalkreinigung hängt von der Härte des Wassers ab. Aber mindestens einmal im Jahr. Verwenden Sie Wasserenthärter, wenn das Wasser in Ihrer Gegend sehr hart ist. Denken Sie auch daran, Fettentferner zu verwenden, um das Fett zu beseitigen: Ohne sie wird der Geschirrspüler innerhalb von 2-3 Jahren fettig.</li>
+<li>5) <u>Waschmaschine</u> – entkalken Sie das Gerät einmal alle sechs Monate. Lassen Sie dazu die Wäsche bei 90 Grad Celsius ohne Wäsche laufen. Um die Wirkung zu verstärken, verwenden Sie Zitronensäure oder einen speziellen Entkalker. Dadurch wird die Lebensdauer des Heizelements verlängert.</li>
+<li>6) <u>Waschmaschine</u> – reinigen Sie den Staub einmal im Jahr. In einer Klimaanlage sammelt sich viel Staub und sie muss immer gereinigt werden, sonst geht sie kaputt. Am besten ist es, einen Techniker mit der Reinigung zu beauftragen, aber Sie können auch versuchen, es selbst zu tun:
 <ul>
-<li>а) снимите крышку</li>
-<li>б) вытащите фильтр и промойте его водой</li>
-<li>в) высушите</li>
-<li>г) поставьте обратно</li>
+<li>a) Entfernen Sie die Abdeckung</li>
+<li>b) Entfernen Sie den Filter und spülen Sie ihn mit Wasser ab.</li>
+<li>c) Trocknen Sie es aus.</li>
+<li>d) Sie wieder einbauen</li>
 </ul>
 </li>
 </ul>
-<p><b>Профилактика сантехники</b> — прочищайте трубы раз в 2 недели. Для пластиковых и металлических труб используйте разные средства. Для металла – каустическая сода, для пластика – горячий раствор стирального порошка.</p>
-<p>Установите фильтр для очистки воды, с ним трубы и смесители прослужат дольше, так как в воде будет меньше извести.</p>
-<p><b>Профилактика газового оборудования</b> – проверяйте раз в год. Для этого пригласите мастера с лицензией, только лицензированный газовщик сможет сделать правильную проверку.</p>
-<p>Следите за сроком службы газовой колонки – использовать просроченное оборудование опасно для жизни. Обращайте внимание на то, как горит огонь, если цвет или интенсивность изменились – значит есть неполадки, срочно вызывайте мастера.</p>
-<p>Когда моете газовую плиту старайтесь, чтобы вода не попала в отверстия для выхода газа. Обращайтесь с газовым оборудованием аккуратно и соблюдайте правила безопасности.</p>
-<p><b>Мебель</b> – проводите осмотр мебели раз в год. Следите за состоянием, по необходимости подтягивайте крепежи и подкручивайте шурупы.</p>
-<p>Раз в полгода обрабатывайте деревянную мебель средствами на основе пчелиного воска, мебель с тканевой обивкой пылесосьте каждую неделю, а с кожаной пропитывайте специальным раствором против загрязнений.</p>
-<p><b>Окна и Двери</b> — промывайте и смазывайте петли раз в полгода. Для этого используете специальную смазку или простое машинное масло. Также не забывайте чистить фурнитуру дверей и окон.</p>
-<p>Не ждите, пока сломается – заботьтесь о своих вещах, проводите профилактику, это сэкономит ваши силы, деньги и время, а вещи будут работать дольше и лучше.</p>
+<p><b>Vorbeugende Wartung von Sanitäranlagen </b> — reinigen Sie die Rohre alle 2 Wochen. Verwenden Sie unterschiedliche Produkte für Kunststoff- und Metallrohre. Natronlauge für Metall und eine heiße Waschmittellösung für Kunststoff.</p>
+<p>Installieren Sie einen Wasserfilter, um sicherzustellen, dass Ihre Rohre und Wasserhähne länger halten, weil weniger Kalk im Wasser ist.</p>
+<p><b>Vorbeugende Wartung von Gasanlagen</b> – einmal im Jahr überprüfen. Lassen Sie dies von einem zugelassenen Gasinstallateur durchführen. Nur ein zugelassener Gasinstallateur ist in der Lage, eine ordnungsgemäße Prüfung durchzuführen.</p>
+<p>Achten Sie auf die Lebensdauer Ihres Gaskessels - der Betrieb eines abgelaufenen Geräts ist lebensgefährlich. Achten Sie auf die Art und Weise, wie das Feuer brennt. Wenn sich die Farbe oder die Intensität des Feuers verändert hat, liegt ein Problem vor, rufen Sie sofort einen Techniker.</p>
+<p>Achten Sie bei der Reinigung Ihres Gaskochfeldes darauf, dass kein Wasser in die Gasaustrittsöffnungen eindringt. Gehen Sie vorsichtig mit dem Gasgerät um und beachten Sie die Sicherheitsvorschriften.</p>
+<p><b>Möbel</b> – kontrollieren Sie die Möbel einmal im Jahr. Achten Sie auf den Zustand und ziehen Sie die Schrauben nach Bedarf nach.</p>
+<p>Behandeln Sie Holzmöbel alle sechs Monate mit Produkten auf Bienenwachsbasis, saugen Sie Möbel mit Stoffbezügen jede Woche ab und imprägnieren Sie Ledermöbel mit einer speziellen Antifouling-Lösung.</p>
+<p><b>Fenster und Türen</b> — waschen und fetten Sie die Scharniere alle sechs Monate. Verwenden Sie dazu ein spezielles Fett oder einfaches Maschinenöl. Denken Sie auch daran, die Tür- und Fensterbeschläge zu reinigen.</p>
+<p>warten Sie nicht, bis etwas kaputt geht - wenn Sie sich um Ihre Sachen kümmern und eine vorbeugende Wartung durchführen, sparen Sie Mühe, Geld und Zeit, und die Dinge werden länger und besser funktionieren.</p>
 
                 ',
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Какие услуги мастеров можно найти на сайте',
+                'image' => 'plugs/article3.jpg',
+                'title' => 'Welche Handwerkerdienste sind auf der Website zu finden?',
                 'text' => '
-                <p>Service ОК – это сервис, который поможет выполнить любую работу по хозяйству. Если срочно нужно переехать – найдём грузчиков и машину, если засорилась труба – поможем с поиском сантехника. Более 1000 мастеров ждут ваших заказов.</p>
-<p>Если сомневаетесь какой именно мастер вам нужен, ознакомьтесь со списком наших услуг. Здесь мы подробно описали, что умеют мастера по каждому направлению и в каких случаях их вызывать.</p>
+                <p>Service OK ist ein Service, der Ihnen bei allen Aufgaben im Haushalt hilft. Wenn Sie dringend umziehen müssen, können wir Umzugshelfer und ein Auto finden, wenn ein Rohr verstopft ist, können wir Ihnen helfen, einen Klempner zu finden. Mehr als 1000 Meister warten auf Ihre Aufträge.</p>
+<p>Wenn Sie nicht genau wissen, welche Art von Handwerker Sie benötigen, sehen Sie sich unsere Liste der Dienstleistungen an. Hier haben wir detailliert aufgeführt, was jeder Handwerker tun kann und wann man ihn rufen sollte.</p>
 <ul>
-<li>1) <b>Слесарь</b> – это специалист по разным видам техники, по работе с металлом, по монтажу и демонтажу различных конструкций.<br />
-Например, если у вас застрял ключ в замке, забыли пароль от сейфа или случайно захлопнули машину, а ключи остались внутри – вызывайте слесаря. Мастер поможет открыть дверь, не повредив её.</li>
-<li>2) <b>Сантехник</b> – это мастер по монтажу и ремонту водопроводных систем и канализации. Сантехник работает со всем, что связано с трубами и водой.<br />
-Протекла труба, засорился унитаз, перестал работать радиатор — вызывайте сантехника. Специалист приедет с набором инструментов для устранения неполадок: подтянет трубы, прочистит унитаз, заставит радиатор снова работать.</li>
-<li>3) Также сантехник оказывает услугу по <b>прочистке труб</b>. Мастера нужно срочно вызвать если вода в раковине, ванной или душевой перестала уходить. Сантехник осмотрит место работы, выяснит причину затора и устранит его.<br />
-Не откладывайте вызов сантехника, если заметили, что вода стала уходить медленнее, чем обычно. Без срочного вмешательства трубу может прорвать, и вода затопит вашу квартиру.</li>
-<li>4) <b>Дезинсектор</b> — занимается <b>борьбой с вредителями и осами</b>. Избавляет от тараканов, мух, клещей, клопов, ос и других насекомых-вредителей. Для этого мастер использует самые эффективные и безопасные для человека средства-дезинсектанты.<br />
-А если завелись мыши или крысы, воспользуйтесь услугой по <b>дератизации</b>. Специалисты использую разные методы для борьбы с грызунами: яды, капканы, газ, электронные и клеевые ловушки. Если не сработал один метод, используют другой, пока вредителей не останется.</li>
-<li>5) <b>Электрик</b> – это человек, который занимается всем, что связано с электричеством. Может сделать развод проводки, поменять лампочки, починить розетку или установить электронные приборы.<br />
-Если у вас перегорели лампочки или вышел из строя счётчик – вызывайте электрика. Специалист установит причину неполадки и устранит её. Не пытайтесь самостоятельно чинить приборы, находящиеся под напряжением – это опасно для жизни. Доверьте это профессионалам.</li>
-<li>6) <b>Сборка и ремонт мебели</b> – наши мастера помогут вам собрать или разобрать любую мебель. Если вы решили переехать, а мебель забираете с собой в новый дом – вызывайте наших мастеров. Сборщики мебели разберут мебель в вашем старом доме, отвезут в новый и соберут её там.<br />
-Также мастера могут починить мебель. Сломанный шкаф, кровать, тумба, диван – специалисты справятся с любым видом мебели. Прикрутят, заклеят, приколотят и мебель снова начнет радовать вас.</li>
-<li>7) <b>Услуги по уборке помещений</b> – уборка офисов, квартир, домов и других помещений. Работники проводят влажную и сухую уборку, моют окна, полы и стены, выносят строительный и бытовой мусор.<br />
-Если у вас недавно прошел ремонт или срочно нужно убраться дома перед праздником – вызывайте клининг. Работники проведут уборку точно в срок и учтут все ваши пожелания.</li>
-<li>8) <b>Служба переезда</b> – оказываем комплекс услуг по переезду: спланируем переезд, найдем грузовую машину и грузчиков, которые упакуют и погрузят вещи, отвезут в новый дом или на склад. Поможем переехать в другой район или город.<br />
-<b>Доставка грузов</b> – доставим крупногабаритный груз в любую точку страны. Машины разной грузоподъемности и вместимости. Оставьте заявку и укажите габариты груза, мы подберем подходящую машину с водителем.
-<li>9) <b>Ремонт бытовой техники</b> – ремонт холодильников, стиральных машин, посудомоек и других бытовых приборов. Если в стиральной машине перестал крутиться барабан или морозилка перестала морозить – вызывайте ремонтников. Починят технику прямо у вас дома, а если не смогут, то сами отвезут её в сервисный центр.<br />
-<li>10) <b>Малярные и штукатурные работы</b> – берем в работу квартиры, дома и промышленные помещения. Работники подготовят помещение к покраске, побелке и поклейке обоев. Мастера используют только качественные материалы, что обеспечивает долговечность и устойчивость покрытия.<br />
-Если решили сменить дома обои или покрасить стены в гараже – заказывайте штукатуров и маляров. Перекрасят стены и потолок в любой цвет, поклеят качественные обои без пузырей трещин и разводов.</li>
-<li>11) <b>Плиточные работы</b> – укладка плитки в ванной, на кухне и тротуаре. Керамическая, керамогранит, пвх, мрамор – подберём плитку под ваши требования. Наши специалисты могут сами привезти все материалы и выполнить работу.<br />
-<li>12) <b>Каменщик</b> – специалист по возведению и ремонту каменных конструкций: кладка кирпича, бетонных блоков, шлакоблоков и других стройматериалов.<br />
-Если решили возвести каменный забор вокруг участка или установить дополнительную стену дома – вызывайте каменщика. Специалист посоветует какой материал лучше использовать, посчитает стоимость, время и выполнит работу.</li>
-<li>13) <b>Монтаж гипсокартона</b> – возведение внутренних перегородок и обшивка стен гипсокартоном.  Гипсокартон используют для разных целей: утепление стен, установка межкомнатных перегородок, подвесных потолков, проемов и арок.<br />
-Установить навесной потолок или выровнять стены с помощью гипсокартона помогут наши мастера. Приедут к вам домой, определят объём работ, подберут нужные материалы и выполнят работу.</li>
+<li>1) <b>Schlosser</b> – ein Experte für alle Arten von Maschinen, für Metallarbeiten und für den Auf- und Abbau verschiedener Strukturen.<br />
+Wenn Sie zum Beispiel einen Schlüssel im Schloss stecken haben, das Passwort für einen Tresor vergessen haben oder versehentlich Ihr Auto abschließen und die Schlüssel noch drin sind, rufen Sie einen Schlüsseldienst. Der Schlüsseldienst wird Ihnen helfen, die Tür zu öffnen, ohne sie zu beschädigen.</li>
+<li>2) <b>Klempner</b> – ein Klempner, der Sanitär- und Abwassersysteme installiert und repariert. Ein Klempner arbeitet mit allem, was mit Rohren und Wasser zu tun hat.<br />
+Wenn ein Rohr undicht ist, eine Toilettenschüssel verstopft ist oder ein Heizkörper nicht mehr funktioniert, rufen Sie einen Klempner. Der Fachmann kommt mit einer Reihe von Werkzeugen, um das Problem zu beheben: Rohre abdichten, die Toilettenschüssel reinigen, den Heizkörper wieder zum Laufen bringen.</li>
+<li>Ein Klempner bietet auch einen <b>Rohrreinigungsservice</b> an. Wenn das Wasser in Ihrem Waschbecken, Ihrer Badewanne oder Dusche nicht mehr fließt, sollten Sie dringend einen Klempner rufen. Der Klempner untersucht den Arbeitsplatz, findet die Ursache der Verstopfung heraus und beseitigt sie.<br />
+Zögern Sie nicht, einen Klempner zu rufen, wenn Sie feststellen, dass das Wasser langsamer als gewöhnlich abläuft. Wenn nicht schnell gehandelt wird, kann ein Rohrbruch Ihre Wohnung überfluten.</li>
+<li>4) <b>Der Kammerjäger</b> — bekämpft Schädlinge und Wespen. Er beseitigt Kakerlaken, Fliegen, Milben, Bettwanzen, Wespen und andere Insektenschädlinge. Zu diesem Zweck verwendet er die wirksamsten und sichersten Desinfektionsmittel für Menschen.<br />
+Und wenn Sie Mäuse oder Ratten haben, können Sie einen Entlausungsdienst beauftragen. Bei der Bekämpfung von Nagetieren kommen verschiedene Methoden zum Einsatz: Gifte, Fallen, Gas, elektronische Fallen und Klebefallen. Wenn eine Methode nicht funktioniert, wenden Sie eine andere an, bis es keine Schädlinge mehr gibt.</li>
+<li>5) <b>Elektriker </b> – eine Person, die sich mit allem beschäftigt, was mit Elektrizität zu tun hat. Er oder sie kann Leitungen verlegen, Glühbirnen auswechseln, Steckdosen reparieren oder elektronische Geräte installieren.<br />
+Wenn Sie eine durchgebrannte Glühbirne oder einen defekten Zähler haben, rufen Sie einen Elektriker. Der Elektriker findet die Ursache des Problems und behebt sie. Versuchen Sie nicht, stromführende Geräte selbst zu reparieren - das ist gefährlich für Ihr Leben. Überlassen Sie dies den Fachleuten.</li>
+<li>6) <b>Möbelmontage und -reparatur </b> – unsere Handwerker können Ihnen bei der Montage oder Demontage jedes Möbelstücks helfen. Wenn Sie sich entschlossen haben, umzuziehen und Ihre Möbel mit in Ihre neue Wohnung zu nehmen, rufen Sie unsere Handwerker an. Die Möbelspediteure nehmen die Möbel in Ihrer alten Wohnung auseinander, bringen sie zu Ihrer neuen Wohnung und bauen sie dort wieder auf.<br />
+Sie können auch Ihre Möbel reparieren. Ein kaputter Kleiderschrank, ein Bett, eine Schublade, ein Sofa - die Spezialisten werden mit jeder Art von Möbel fertig. Sie schrauben, kleben, stecken und machen Ihre Möbel wieder glücklich.</li>
+<li>7) <b>Reinigungsdienste </b> – Reinigung von Büros, Wohnungen, Häusern und anderen Räumlichkeiten. Die Beschäftigten führen Nass- und Trockenreinigungen durch, waschen Fenster, Böden und Wände und beseitigen Bau- und Haushaltsabfälle.<br />
+Wenn Sie kürzlich eine Reparatur hatten oder Ihr Haus vor den Ferien dringend reinigen müssen - rufen Sie die Reinigung an. Sie reinigen pünktlich und berücksichtigen alle Ihre Wünsche.</li>
+<li>8) <b>Umzugsservice </b> – wir bieten eine Reihe von Umzugsdienstleistungen an: Wir planen den Umzug, finden einen Lkw und Umzugshelfer, die Ihr Hab und Gut verpacken, verladen und zu Ihrem neuen Zuhause oder Lager bringen. Wir können Ihnen beim Umzug in eine andere Region oder Stadt helfen.<br />
+<b>Lieferung von Waren </b> – wir liefern sperrige Güter überall im Land. Lastkraftwagen mit unterschiedlichen Kapazitäten und Fassungsvermögen. Hinterlassen Sie eine Anfrage und geben Sie die Maße Ihrer Ladung an, und wir werden das richtige Auto und den richtigen Fahrer für Sie finden.
+<li>9) <b>Reparaturen von Haushaltsgeräten </b> – Reparatur von Kühlschränken, Waschmaschinen, Geschirrspülern und anderen Haushaltsgeräten. Wenn Ihre Waschmaschine nicht mehr schleudert oder Ihr Gefrierschrank nicht mehr gefriert, rufen Sie einen Reparaturdienst. Sie können Ihre Geräte zu Hause reparieren oder, falls dies nicht möglich ist, selbst zum Servicecenter bringen.<br />
+<li>10) <b>Maler- und Stuckateurarbeiten</b> – wir arbeiten in Wohnungen, Häusern und Industrieanlagen. Die Arbeiter bereiten den Raum für die Maler-, Tüncher- und Tapezierarbeiten vor. Die Arbeiter verwenden ausschließlich hochwertige Materialien, was die Haltbarkeit und Nachhaltigkeit der Beschichtung gewährleistet.<br />
+Wenn Sie beschlossen haben, zu Hause die Tapeten zu wechseln oder die Wände in Ihrer Garage zu streichen, buchen Sie Stuckateure und Maler. Sie streichen die Wände und Decken in jeder beliebigen Farbe und kleben hochwertige Tapeten ohne Blasen, Risse oder Streifen.</li>
+<li>11) <b>Fliesenlegerarbeiten</b> – Verlegung von Fliesen im Bad, in der Küche und auf dem Gehweg. Keramik, Feinsteinzeug, PVC, Marmor - wir können Fliesen nach Ihren Wünschen auswählen. Unsere Fachleute können das gesamte Material mitbringen und die Arbeiten selbst ausführen.<br />
+<li>12) <b>Maurer</b> – Spezialist für den Bau und die Instandsetzung von Mauerwerken: Mauersteine, Betonsteine, Schlackensteine und andere Baumaterialien.<br />
+Wenn Sie sich entschlossen haben, einen Steinzaun um Ihr Grundstück zu bauen oder eine zusätzliche Mauer in Ihrem Haus zu errichten, sollten Sie einen Steinmetz hinzuziehen. Der Fachmann berät Sie bei der Wahl des geeigneten Materials, berechnet Kosten und Zeitaufwand und führt die Arbeiten aus.</li>
+<li>13) <b>Montage von Gipskartonplatten</b> – Der Bau von Trennwänden und Gipskartonverkleidungen im Innenbereich.  Gipskartonplatten werden für eine Vielzahl von Zwecken verwendet: Wandisolierung, Innentrennwände, abgehängte Decken, Öffnungen und Gewölbe.<br />
+Unsere Handwerker können Ihnen helfen, eine Zwischendecke einzubauen oder die Wände mit Hilfe von Trockenbauwänden auszurichten. Sie kommen zu Ihnen nach Hause, bestimmen den Umfang der Arbeiten, wählen die erforderlichen Materialien aus und führen die Arbeiten aus.</li>
 </ul>
-<p>Это неполный список услуг, который оказывает наш сервис. Штат специалистов постоянно пополняется и спектр услуг расширяется.</p>
-<p>Не нашли то, что искали? -  Оставьте заявку на сайте, наши менеджеры подберут Вам подходящего мастера!</p>
+<p>Dies ist eine unvollständige Liste der von uns angebotenen Dienstleistungen. Wir erweitern ständig unser Personal um Spezialisten und bauen unser Dienstleistungsangebot aus.</p>
+<p>Sie können nicht finden, was Sie suchen? - Hinterlassen Sie eine Anfrage auf unserer Website und unsere Manager werden den richtigen Handwerker für Sie finden!</p>
                 ',
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Как одновременно работать над несколькими проектами',
+                'image' => 'plugs/article4.jpg',
+                'title' => 'Wie man an mehreren Projekten gleichzeitig arbeitet',
                 'text' => '
-                <p>У хорошего мастера всегда много заказов, но не всегда хватает времени и сил, чтобы вести несколько проектов одновременно. Если боитесь выгореть, взяв несколько проектов сразу, то прочитайте нашу статью. В ней расскажем, как совмещать 3-4 и даже больше заказов.</p>
-<p>1) <b>Список задач</b></p>
-<p>Чтобы не забыть о проекте или задаче, составьте таблицу. В ней должны присутствовать: названия проекта, что нужно сделать и крайний срок – это минимум.</p>
-<p>Инструменты для ведения таблиц:</p>
-<p>На бумаге – вариант для тех, кому не надо носить везде с собой список задач, и кто лучше воспринимает информацию на физических носителях. Например, если работаете удаленно и работу выполняете дома, повесьте стикеры на экран монитора или заведите доску для задач.</p>
-<p>Гугл таблицы – для тех, кому больше нравится экран монитора. В гугл документах можно создать свою таблицу или воспользоваться шаблоном, создавать подзадачи, делать заметки и многое другое. К такой таблице всегда будет доступ через интернет, что удобно если вам приходится много ездить.</p>
-<p>В мобильном – если все всегда должно быть под рукой. Мобильные планировщики задач помогут составить списки, чек листы, таблицы, не забыть о дедлайне, оставить важные заметки и прочее. Мобильное приложение стоит использовать, если вы много ездите по работе, а задачи появляются и меняются быстро — надо реагировать молниеносно, чтобы не забыть внести в таблицу что-то важное.</p>
-<p>2) <b>Приоритеты</b></p>
-<p>Расставляйте приоритеты исходя из своего состояния. Если чувствуете прилив сил и энергии – берите сложные проекты, если наоборот – сил нет, сделайте что-нибудь легкое.</p>
-<p>Главное не забывать о сроках: фильтруйте задачи по срочности выполнения и приступайте к самым сложным. Начинать лучше со срочных и трудоемких задач.</p>
-<p>3) <b>Время</b></p>
-<p>Распределяя время, главное не забывать, что в сутках 24 часа, а вам надо отдыхать.</p>
-<p>Учитывайте режим – если просыпаетесь рано и пик активности приходится на первую половину дня, то в это время лучше брать задачи посложнее, а на вечер оставить попроще. И наоборот если, если прилив сил приходит к вечеру.</p>
-<p>Засеките сколько занимает времени каждая задача – это поможет оптимизировать время. Если будете знать сколько времени отнимает выполнения одной задачи, сможете распланировать работу с точностью до минуты. Просто запускайте секундомер каждый раз, когда начинаете работу.</p>
-<p>Разбейте задачу на этапы. Распишите каждый шаг, чтобы точно понимать, что необходимо сделать. Например, если нужно ехать к клиенту, то время на поездку необходимо вынести в отдельный этап. Так будет намного проще планировать своё время.</p>
-<p>4) <b>Делегируйте рутину</b>.</p>
-<p>Если в рабочем процессе есть задачи, которые не требуют особых навыков, но отнимают много времени – отдайте эти задачи. Освободившееся время используйте для отдыха или решения основных задач. Например, если перед выполнением работы нужно что-то купить – оформите доставку. Это сэкономить время и силы.</p>
-<p>5) <b>Учитывайте форс-мажоры</b></p>
-<p>Когда планируете проект, учитывайте не только время, которое потратите на выполнение, но и непредвиденные обстоятельства. Оставьте в запасе хотя бы один день, лучше 2-3, чтобы точно все успеть. Например, может сломаться машина или компьютер, а ждать починку несколько дней.</p>
-<p>Если не успеваете вовремя по каким-то причинам, предупредите заказчика и сделайте скидку, чтобы не потерять клиента.</p>
-<p>6) <b>Отдыхайте</b></p>
-<p>Если почувствовали, что ресурсы на исходе, не берите новых проектов, закончите старые и отдохните. Качественно выполнять работу можно только в бодром состоянии. А если делать работу кое-как, то можно потерять клиентов. Так что отдых не менее важен, чем сама работа.</p>
-<p>Надеемся наши советы помогут и у вас не возникнет сложностей с тем, как вести сразу несколько проектов.</p>
+                <p>Ein guter Handwerker hat immer viele Aufträge, aber nicht immer genug Zeit und Energie, um mehrere Projekte auf einmal zu erledigen. Wenn Sie befürchten, dass Sie ausbrennen, wenn Sie mehrere Projekte auf einmal übernehmen, lesen Sie unseren Artikel. Wir sagen Ihnen, wie Sie 3-4 oder sogar mehr Jobs kombinieren können.</p>
+<p>1) <b>Liste der Aufgaben</b></p>
+<p>Um ein Projekt oder eine Aufgabe nicht zu vergessen, legen Sie eine Tabelle an. Sie sollte Folgendes enthalten: den Namen des Projekts, die zu erledigenden Aufgaben und eine Frist - das ist das Mindeste.</p>
+<p>Werkzeuge zur Führung einer Tabelle:</p>
+<p>Papier ist eine Option für diejenigen, die keine Liste mit Aufgaben mit sich herumtragen müssen und die Informationen auf physischen Medien besser aufnehmen können. Wenn Sie z. B. von zu Hause aus arbeiten, sollten Sie Ihren Bildschirm mit Aufklebern versehen oder eine Aufgabentafel aufstellen.</p>
+<p>Google Spreadsheets - für diejenigen, die den Bildschirm bevorzugen. In Google Docs können Sie Ihre eigene Tabelle erstellen oder eine Vorlage verwenden, Unteraufgaben erstellen, Notizen machen und vieles mehr. Eine solche Tabelle ist immer über das Internet zugänglich, was praktisch ist, wenn Sie viel unterwegs sind.</p>
+<p>In Mobile - wenn alles immer griffbereit sein soll. Mobile Aufgabenplaner können Ihnen helfen, Listen, Checklisten und Tabellen zu erstellen, sich an Fristen zu erinnern, wichtige Notizen zu hinterlassen usw. Eine mobile App ist sinnvoll, wenn Sie beruflich viel unterwegs sind und Aufgaben schnell auftauchen und sich ändern - Sie müssen blitzschnell reagieren, damit Sie nicht vergessen, etwas Wichtiges in die Tabelle einzutragen.</p>
+<p>2) <b>Prioritäten</b></p>
+<p>Setzen Sie die Prioritäten je nach Ihrem Zustand. Wenn Sie sich stark und energiegeladen fühlen, nehmen Sie anspruchsvolle Projekte in Angriff; wenn das Gegenteil der Fall ist, machen Sie etwas Leichtes.</p>
+<p>Das Wichtigste ist, die Fristen nicht zu vergessen: Filtern Sie die Aufgaben nach ihrer Dringlichkeit und beginnen Sie mit den schwierigsten. Es ist besser, mit dringenden und zeitaufwendigen Aufgaben zu beginnen.</p>
+<p>3) <b>Zeit</b></p>
+<p>Bei der Zeiteinteilung darf man nicht vergessen, dass ein Tag 24 Stunden hat und man sich ausruhen muss.</p>
+<p>Wenn Sie früh aufstehen und Ihre Aktivität in der ersten Tageshälfte ihren Höhepunkt erreicht, ist es besser, kompliziertere Aufgaben zu diesem Zeitpunkt zu erledigen und die leichteren für den Abend aufzusparen. Umgekehrt, wenn Ihr Energieschub am Abend kommt.</p>
+<p>Führen Sie Buch darüber, wie lange jede Aufgabe dauert - so können Sie Ihre Zeit optimal nutzen. Wenn Sie wissen, wie lange es dauert, eine Aufgabe zu erledigen, können Sie Ihre Arbeit auf die Minute genau planen. Starten Sie die Stoppuhr einfach jedes Mal, wenn Sie eine Aufgabe beginnen.</p>
+<p>Unterteilen Sie Ihre Aufgabe in einzelne Schritte. Planen Sie jeden Schritt, damit Sie genau wissen, was zu tun ist. Wenn Sie beispielsweise zum Haus eines Kunden fahren müssen, sollten Sie die Fahrtzeit in einem separaten Schritt angeben. So können Sie Ihre Zeit viel besser planen.</p>
+<p>4) <b>Delegieren Sie die Routine</b></p>
+<p>Wenn es in Ihrem Arbeitsablauf Aufgaben gibt, die keine besonderen Fähigkeiten erfordern, aber zeitaufwändig sind, geben Sie diese Aufgaben ab. Nutzen Sie die freie Zeit, um sich auszuruhen oder grundlegende Aufgaben zu erledigen. Wenn Sie z. B. etwas kaufen müssen, bevor Sie Ihre Arbeit tun, machen Sie eine Lieferung. Das spart Zeit und Mühe.</p>
+<p>5) <b>Berücksichtigen Sie höhere Gewalt</b></p>
+<p>Berücksichtigen Sie bei der Planung eines Projekts nicht nur die Zeit, die es in Anspruch nehmen wird, sondern auch unvorhergesehene Umstände. Lassen Sie mindestens einen Tag, besser 2-3, in Reserve, damit Sie alles erledigen können. Zum Beispiel kann Ihr Auto oder Ihr Computer kaputt gehen, und Sie müssen mehrere Tage warten, bis er repariert ist.</p>
+<p>Wenn Sie es aus irgendeinem Grund nicht rechtzeitig schaffen, warnen Sie den Kunden und machen Sie einen Preisnachlass, um den Kunden nicht zu verlieren.</p>
+<p>6) <b>Entspannen Sie sich</b></p>
+<p>Wenn Sie das Gefühl haben, dass Ihnen die Ressourcen ausgehen, nehmen Sie keine neuen Projekte in Angriff, beenden Sie alte und ruhen Sie sich aus. Qualitätsarbeit kann man nur leisten, wenn man wach ist. Wenn Sie die Arbeit schlecht machen, könnten Sie Kunden verlieren. Ruhe ist also genauso wichtig wie die Arbeit selbst.</p>
+<p>Wir hoffen, dass unsere Ratschläge Ihnen helfen und dass Sie keine Schwierigkeiten haben werden, mehrere Projekte gleichzeitig zu verwalten.</p>
                 ',
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Как превратить разовых клиентов в постоянных',
+                'image' => 'plugs/article5.jpg',
+                'title' => 'Wie man einmalige Kunden in Stammkunden verwandelt',
                 'text' => '
-                <p>Постоянными клиентами называют тех, кто воспользовался услугой одного мастера или что-то купил в одном магазине больше двух раз.</p>
-<p>Постоянники очень выгодны для бизнеса:</p>
-<p>Не надо себя рекламировать – знают о вас и как вы работаете.</p>
-<p>Бесплатная реклама — рекомендуют места или специалистов своим знакомым.</p>
-<p>Удобно работать – вы уже знаете, чего хочет клиент, а он знает как вы это исполните.</p>
-<p>Что нужно сделать, чтобы человек вернулся и стал постоянным клиентом?</p>
-<p>1. <b>Оставить хорошее первое впечатление</b>.</p>
-<p>По первому впечатлению клиент оценивает можно ли вам доверять. На это влияет не только то, как вы себя ведете и во что одеты, но и то, как хорошо выполните первый заказ. Даже если человек с первого взгляда отнёсся к вам со скепсисом, то хорошо выполненная работа может рассеять сомнения.</p>
-<p>Есть много рекомендаций как расположить к себе клиента: правильная поза, мимика, жесты, одежда, голос, приемы НЛП и прочее. Но все это не работает, если работа сделана плохо.</p>
-<p>Также хорошо выполненная работа не поможет, если грубить клиенту. При общении поддерживайте уважительный тон, не переходите сразу на «ты», покажите, что клиент важен.</p>
-<p>Делайте работу хорошо и будьте вежливы – так вы оставите положительное первое впечатление.</p>
-<p>2. <b>Напоминать о себе</b>.</p>
-<p>После выполнения первого заказа, даже если все прошло хорошо, клиент может просто забыть про вас. Чтобы этого не произошло – напоминайте о себе.</p>
-<p>Придумайте систему лояльности, например скидку на следующий заказ.</p>
-<p>Предложите клиенту подписаться на вас в социальных сетях, где показываете свою работу. Если нет такой странички – обязательно заведите.</p>
-<p>Попросите клиента оставить контактные данные, чтобы сообщать о скидках и акциях.</p>
-<p>Если знаете, что через некоторое время клиенту снова понадобиться похожая услуга, то не стесняйтесь звонить или писать, чтобы предложить себя как исполнителя. Например, если установили газовую колонку, а через полгода её нужно проверить, напомните о себе.</p>
-<p>3. <b>Поддерживать деловые отношения</b>.</p>
-<p>Мы уже говорили, что нужно быть вежливым при первом общении. В дальнейшем лучше тоже быть вежливым и сохранять уважительный тон. Бывают исключения, когда с клиентом складываются дружеские отношения, вы начинаете общаться на «ты» и чувствуете себя комфортно.</p>
-<p>Но будьте осторожны, часто такие отношения приводят к тому, что клиент просить сделать что-нибудь «по-дружески» бесплатно. Также рассказы о личных проблемах могут отпугнуть клиента.</p>
-<p>Чтобы такого не произошло, даже при самом теплом общении с клиентом держите дистанцию, оставайтесь на деловом уровне. Общение должно строиться только вокруг работы, которую вы собираетесь выполнить для клиента. Не надо уходить в глубоко личные темы.</p>
-<p>4. <b>Делать чуть больше</b>.</p>
-<p>Всегда приятно – получить чуть больше, чем ожидал. Неожиданные приятные мелочи, которые вы делаете для клиента, вызывают позитивные эмоции, в дальнейшем они будут ассоциироваться с вами. Это повысит лояльность клиента и увеличит вероятность повторного обращения.</p>
-<p>Например, когда выполняете монтажные работы, ведёте фото и видео репортаж, даже если не договаривались об этом. Это вовлечет клиента в работу и повысит доверие.</p>
-<p>Или если договорились сделать уборку только в комнатах, наведите порядок еще и в коридоре, клиент обязательно это оценит.</p>
-<p>Эмоции, которые испытает человек работая с вами, могут стать решающем фактором при решении о повторном обращении.</p>
-<p><b>Вывод</b></p>
-<p>Если наработать хорошую базу постоянных клиентов, то можно больше не беспокоиться о рекламе и новых заказах. Они будут приходить сами.</p>
-<p>Наши рекомендации не исчерпывающие, есть много способов удержать клиентов, но главное быть честным, открытым и отзывчивым. А еще хорошо делать свою работу, тогда люди будут возвращаться к вам и рекомендовать друзьям.</p>
+                <p>Stammkunden sind diejenigen, die mehr als zweimal die Dienste desselben Handwerkers in Anspruch genommen oder etwas im selben Geschäft gekauft haben.</p>
+<p>Stammkunden sind sehr gut fürs Geschäft: </p>
+<p>Sie müssen nicht für sich werben – wissen über Sie und Ihre Arbeitsweise.</p>
+<p>Kostenlose Werbung — ihren Freunden Orte oder Spezialisten zu empfehlen.</p>
+<p>Problemlose Arbeit – Sie wissen bereits, was der Kunde will, und er weiß, wie Sie es schaffen werden.</p>
+<p>Was braucht man, um jemanden dazu zu bringen, wiederzukommen und ein Stammkunde zu werden?</p>
+<p>1. <b>Einen guten ersten Eindruck hinterlassen</b></p>
+<p>Der erste Eindruck ist entscheidend dafür, ob ein Kunde Ihnen vertrauen kann. Dies hängt nicht nur davon ab, wie Sie sich verhalten und was Sie anhaben, sondern auch davon, wie gut Sie den ersten Auftrag ausführen. Selbst wenn eine Person auf den ersten Blick skeptisch ist, kann eine gut gemachte Arbeit Zweifel ausräumen.  </p>
+<p>Es gibt viele Ratschläge, wie man einen Kunden dazu bringt, einen zu mögen: die richtige Körperhaltung, Mimik, Gestik, Kleidung, Stimme, NLP-Techniken und so weiter. Aber all das funktioniert nicht, wenn die Arbeit schlecht gemacht ist.</p>
+<p>Es hilft auch nicht, gute Arbeit zu leisten, wenn man dem Kunden gegenüber unhöflich ist. Bleiben Sie bei der Kommunikation in einem respektvollen Ton, sprechen Sie nicht direkt mit "Du", zeigen Sie, dass der Kunde wichtig ist.</p>
+<p>Machen Sie Ihre Arbeit gut und seien Sie höflich - so werden Sie einen positiven ersten Eindruck hinterlassen.</p>
+<p>2. <b>An sich selbst erinnert zu werden</b></p>
+<p>Nach der ersten Bestellung, auch wenn alles gut gelaufen ist, kann es sein, dass der Kunde Sie einfach vergisst. Um dies zu verhindern, sollten Sie sich daran erinnern.</p>
+<p>Denken Sie an ein Treueprogramm, z. B. einen Rabatt auf die nächste Bestellung.</p>
+<p>Laden Sie den Kunden ein, Sie in den Social Media zu abonnieren, wo Sie Ihre Arbeit zeigen. Wenn Sie noch keine haben, sollten Sie sie unbedingt haben.</p>
+<p>Bitten Sie den Kunden, seine Kontaktdaten zu hinterlassen, um Sie über Rabatte und Sonderangebote zu informieren.</p>
+<p>Wenn Sie wissen, dass ein Kunde nach einiger Zeit wieder eine ähnliche Dienstleistung benötigt, zögern Sie nicht, anzurufen oder zu schreiben und sich als Dienstleister anzubieten. Wenn Sie zum Beispiel einen Gasboiler installiert haben und dieser nach sechs Monaten überprüft werden muss, sollten Sie sich daran erinnern.</p>
+<p>3. <b>Geschäftsbeziehungen pflegen</b></p>
+<p>Wir haben bereits gesagt, dass Sie beim ersten Gespräch mit jemandem höflich sein sollten. Danach ist es besser, höflich zu sein und einen respektvollen Ton beizubehalten. Es gibt Ausnahmen, wenn sich eine freundschaftliche Beziehung zu einem Kunden entwickelt, man sich mit dem Vornamen anspricht und sich wohl fühlt.</p>
+<p>Aber Vorsicht, diese Art von Beziehung führt oft dazu, dass der Kunde darum bittet, etwas "Freundliches" umsonst zu tun. Auch das Sprechen über persönliche Probleme kann den Kunden abschrecken.</p>
+<p>Um dies zu vermeiden, sollten Sie selbst bei einer herzlichen Kommunikation mit einem Kunden auf Distanz gehen und auf der geschäftlichen Ebene bleiben. In der Kommunikation sollte es nur um die Arbeit gehen, die Sie für den Kunden zu leisten gedenken. Gehen Sie nicht auf sehr persönliche Themen ein.</p>
+<p>4. <b>Ein bisschen mehr tun</b></p>
+<p>Es ist immer schön, ein bisschen mehr zu bekommen, als man erwartet hat. Unerwartete, nette Kleinigkeiten, die Sie für einen Kunden tun, wecken positive Emotionen, die er in Zukunft mit Ihnen in Verbindung bringen wird. Dadurch wird die Kundenbindung erhöht und die Wahrscheinlichkeit, dass sie wiederkommen, gesteigert.</p>
+<p>Wenn Sie z. B. die Installationsarbeiten durchführen, sollten Sie einen Foto- und Videobericht erstellen, auch wenn Sie dies nicht vereinbart haben. Dadurch wird der Kunde in die Arbeit einbezogen und das Vertrauen gestärkt.</p>
+<p>Oder wenn Sie sich nur bereit erklärt haben, die Zimmer zu reinigen, räumen Sie auch den Flur auf, der Kunde wird es zu schätzen wissen.</p>
+<p>Die Emotionen, die eine Person bei der Zusammenarbeit mit Ihnen empfindet, können ausschlaggebend dafür sein, ob sie sich erneut an Sie wendet.</p>
+<p><b>Schlussfolgerung</b></p>
+<p>Wenn Sie sich einen guten Kundenstamm aufgebaut haben, müssen Sie sich nicht mehr um Werbung und neue Aufträge kümmern. Sie werden von selbst kommen.</p>
+<p>Unsere Empfehlungen sind nicht erschöpfend, es gibt viele Möglichkeiten, Kunden zu binden, aber das Wichtigste ist, ehrlich, offen und ansprechbar zu sein. Und machen Sie Ihre Arbeit gut, dann werden die Leute zu Ihnen zurückkommen und Sie Freunden empfehlen.</p>
 
                 ',
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/blog-img.jpg',
-                'title' => 'Как заказать услугу на Service OK',
+                'image' => 'plugs/article6.jpg',
+                'title' => 'Wie bestellt man eine Dienstleistung bei Service OK?',
                 'text' => '
-                <p><b>Service Ок</b> — это сервис для поиска мастеров. Если нужна помощь по хозяйству, мы найдём для вас подходящего специалиста.</p>
-<p>У нас в базе более 1000 мастеров. Они умеют: чинить трубы, наводить порядок, вскрывать замки, проводить электричество, уничтожать паразитов и многое другое. База мастеров и список услуг постоянно пополняются.</p>
-<h2>Как заказать услугу?</h2>
-<h2>Понять какая услуга нужна, для этого:</h2>
+                <p><b>Service Ок</b> — ein Dienst zur Vermittlung von Handwerkern. Wenn Sie eine Haushaltshilfe brauchen, finden wir die richtige Person für Sie.</p>
+<p>Wir haben über 1.000 Handwerker in unserer Datenbank. Sie können Rohre reparieren, aufräumen, Schlösser öffnen, Elektroarbeiten durchführen, Ungeziefer töten und vieles mehr. Wir erweitern ständig unsere Datenbank und die Liste unserer Dienstleistungen.</p>
+<h2>Wie kann man eine Dienstleistung bestellen?</h2>
+<h2>Verstehen, welche Art von Dienstleistung benötigt wird, dafür:</h2>
 <ul>
-<li>1) Ознакомьтесь со списком наших услуг и выберете подходящую</li>
-<li>2) Если не нашли нужную услугу – опишите проблему своими словами</li>
-<li>3) Позвоните нам и сообщите, какой услугой хотите воспользоваться. Еще для этого можно оставить заявку на сайте</li>
-<li>4) Менеджер поможет выбрать подходящую опцию.</li>
+<li>1) Prüfen Sie die Liste unserer Dienstleistungen und wählen Sie die richtige aus</li>
+<li>2) Wenn Sie die gewünschte Dienstleistung nicht finden können, beschreiben Sie das Problem mit Ihren eigenen Worten</li>
+<li>3) Rufen Sie uns an und teilen Sie uns mit, welchen Dienst Sie in Anspruch nehmen möchten. Sie können auch ein Bewerbungsformular auf der Website hinterlassen</li>
+<li>4) Ein Manager hilft Ihnen bei der Auswahl der richtigen Option.</li>
 </ul>
-<h2>Определиться с мастером.</h2>
-<p>Все заботы по поиску мастера — берем на себя, но, если у вас есть какие-то особые пожелания, мы их учтём. Просто сообщите об этом нашему менеджеру.</p>
-<p>Не обещаем, что найдем идеального мастера, который будет подходить по всем параметрам. Но, если хотите заказать, например, мастера-женщину, а не мастера-мужчину, постараемся это выполнить.</p>
-<h2>Какая еще нужна информация?</h2>
-<p>Для заказа услуги еще понадобиться указать удобное время, ваше имя, адрес и телефон.</p>
-<p>Для выполнения заказа этой информации вполне достаточно, но чем подробнее опишите проблему, тем быстрее мы найдем мастера.</p>
-<h2>Ждать.</h2>
-<p>После согласования всех деталей, вам остается только ждать. В это время менеджер найдет мастера и отправит его к вам для выполнения работы. Обычно это занимает немного времени, а обо всех возможных задержках вас предупредят.</p>
-<h2>Если что-то пойдет не так.</h2>
-<p>Мы всегда остаемся на связи, если возникла конфликтная ситуация или вы недовольны качеством выполненной работы – позвоните нам, решим любую проблему. Пожалуйста, сообщайте, если мастер выполнил свою работу недобросовестно, мы примем меры.</p>
-<h2>Чтобы заказать услугу, позвоните по номеру +7 (812) 603-94-02 или оставьте заявку на главной странице нашего сайта.</h2>
-<h2>Надеемся, что Service Ок поможет в решении ваших проблем.</h2>
+<h2>Entscheiden Sie sich für einen Handwerker.</h2>
+<p>Wir kümmern uns um die Suche nach einem Handwerker, aber wenn Sie besondere Wünsche haben, werden wir diese berücksichtigen. Informieren Sie einfach unseren Manager.</p>
+<p>Wir können Ihnen nicht versprechen, dass Sie den perfekten Handwerker für Ihre Bedürfnisse finden werden. Aber wenn Sie zum Beispiel einen weiblichen Meister statt eines männlichen Meisters bestellen möchten, werden wir unser Bestes tun, um Ihnen entgegenzukommen.</p>
+<h2>Welche weiteren Informationen sind nötig?</h2>
+<p>Um den Dienst zu bestellen, müssen Sie außerdem Ihren Namen, Ihre Adresse und Ihre Telefonnummer angeben.</p>
+<p>Diese Informationen reichen aus, um den Auftrag zu erfüllen, aber je detaillierter das Problem ist, desto schneller können wir einen Techniker finden.</p>
+<h2>Warten.</h2>
+<p>Wenn alle Details geklärt sind, brauchen Sie nur noch zu warten. In dieser Zeit wird ein Manager einen Handwerker finden und ihn zu Ihnen schicken, um die Arbeit zu erledigen. Dies dauert in der Regel nicht lange, und Sie werden vor möglichen Verzögerungen gewarnt.</p>
+<h2>Wenn etwas schief geht.</h2>
+<p>Wir werden immer in Kontakt bleiben, wenn es einen Konflikt gibt oder Sie mit der Qualität der geleisteten Arbeit unzufrieden sind - rufen Sie uns an, wir werden jedes Problem lösen. Bitte teilen Sie uns mit, wenn ein Handwerker seine Arbeit nicht ordnungsgemäß erledigt hat, und wir werden Maßnahmen ergreifen.</p>
+<h2>Um den Dienst zu bestellen, rufen Sie +7 (812) 603-94-02 an oder hinterlassen Sie eine Anfrage auf der Startseite unserer Website.</h2>
+<h2>Wir hoffen, dass Service OK bei Ihren Problemen helfen wird.</h2>
                 ',
             ],
         ];
@@ -308,7 +308,7 @@ class DatabaseSeeder extends Seeder
         //     Master::factory()->hasAttached(Service::all()->random(3))->create();
         // }
 
-        // Post::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/blog-img.jpg'])]);
+        // Post::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/article1.jpg'])]);
         // Review::factory(10)->create(['image_id' => Image::create(['source' => 'plugs/review-avatar.jpg'])]);
 
         User::factory()->create();
