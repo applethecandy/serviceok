@@ -117,7 +117,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/article2.jpg',
+                'image' => 'plugs/article4.jpg',
                 'title' => 'Warten Sie nicht, bis es kaputt geht',
                 'text' => '
                 <p>Eine Zerstörung ist immer ein unangenehmes Ereignis, das viele Unannehmlichkeiten verursacht und Sie zwingt, Geld für Reparaturen oder Ersatz auszugeben. Um Zeit und Geld zu sparen, ist eine rechtzeitige vorbeugende Wartung unerlässlich.</p>
@@ -154,7 +154,7 @@ Wenn ein paar Tage lang niemand zu Hause ist, schalten Sie die gesamte Wohnung s
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/article3.jpg',
+                'image' => 'plugs/article2.jpg',
                 'title' => 'Welche Handwerkerdienste sind auf der Website zu finden?',
                 'text' => '
                 <p>Service OK ist ein Service, der Ihnen bei allen Aufgaben im Haushalt hilft. Wenn Sie dringend umziehen müssen, können wir Umzugshelfer und ein Auto finden, wenn ein Rohr verstopft ist, können wir Ihnen helfen, einen Klempner zu finden. Mehr als 1000 Meister warten auf Ihre Aufträge.</p>
@@ -191,7 +191,7 @@ Unsere Handwerker können Ihnen helfen, eine Zwischendecke einzubauen oder die W
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/article4.jpg',
+                'image' => 'plugs/article6.jpg',
                 'title' => 'Wie man an mehreren Projekten gleichzeitig arbeitet',
                 'text' => '
                 <p>Ein guter Handwerker hat immer viele Aufträge, aber nicht immer genug Zeit und Energie, um mehrere Projekte auf einmal zu erledigen. Wenn Sie befürchten, dass Sie ausbrennen, wenn Sie mehrere Projekte auf einmal übernehmen, lesen Sie unseren Artikel. Wir sagen Ihnen, wie Sie 3-4 oder sogar mehr Jobs kombinieren können.</p>
@@ -258,7 +258,7 @@ Unsere Handwerker können Ihnen helfen, eine Zwischendecke einzubauen oder die W
             ],
             [
                 'topic' => 'unknown',
-                'image' => 'plugs/article6.jpg',
+                'image' => 'plugs/article3.jpg',
                 'title' => 'Wie bestellt man eine Dienstleistung bei Service OK?',
                 'text' => '
                 <p><b>Service Ок</b> — ein Dienst zur Vermittlung von Handwerkern. Wenn Sie eine Haushaltshilfe brauchen, finden wir die richtige Person für Sie.</p>
