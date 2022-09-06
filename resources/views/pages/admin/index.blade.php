@@ -14,6 +14,7 @@
                 <th>City</th>
                 <th>Phone</th>
                 <th>Date</th>
+                <th>Services</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,7 @@
                     <td data-title="City">{{ $master->city }}</td>
                     <td data-title="Phone">{{ $master->phone }}</td>
                     <td data-title="Phone">{{ $master->created_at->format('d.m.Y H:m:s') }}</td>
+                    <td data-title="Services">{{ implode(', ', $master->services->pluck('title')->toArray()) }}</td>
                 </tr>
             @endforeach
         </tbody>
