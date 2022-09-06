@@ -70,7 +70,7 @@
                 <p class="text-big">@lang('pages/index.quiz.text')</p>
 
                 <div class="request__buttons">
-                    <a href="tel:tel:+78126039402" class="button-main">@lang('pages/index.quiz.buttons.call')</a>
+                    <a href="tel:tel:08004009300" class="button-main">@lang('pages/index.quiz.buttons.call')</a>
                     <a href="{{ route('work.create') }}" class="button">@lang('pages/index.quiz.buttons.form')</a>
                 </div>
             </div>

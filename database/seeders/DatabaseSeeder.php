@@ -281,7 +281,7 @@ Unsere Handwerker können Ihnen helfen, eine Zwischendecke einzubauen oder die W
 <p>Wenn alle Details geklärt sind, brauchen Sie nur noch zu warten. In dieser Zeit wird ein Manager einen Handwerker finden und ihn zu Ihnen schicken, um die Arbeit zu erledigen. Dies dauert in der Regel nicht lange, und Sie werden vor möglichen Verzögerungen gewarnt.</p>
 <h2>Wenn etwas schief geht.</h2>
 <p>Wir werden immer in Kontakt bleiben, wenn es einen Konflikt gibt oder Sie mit der Qualität der geleisteten Arbeit unzufrieden sind - rufen Sie uns an, wir werden jedes Problem lösen. Bitte teilen Sie uns mit, wenn ein Handwerker seine Arbeit nicht ordnungsgemäß erledigt hat, und wir werden Maßnahmen ergreifen.</p>
-<h2>Um den Dienst zu bestellen, rufen Sie +7 (812) 603-94-02 an oder hinterlassen Sie eine Anfrage auf der Startseite unserer Website.</h2>
+<h2>Um den Dienst zu bestellen, rufen Sie 0(800) 400-9300 an oder hinterlassen Sie eine Anfrage auf der Startseite unserer Website.</h2>
 <h2>Wir hoffen, dass Service OK bei Ihren Problemen helfen wird.</h2>
                 ',
             ],
