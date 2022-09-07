@@ -5,6 +5,7 @@
         </div>
 
         <div class="blog-card__description">
+            {{-- temporary remove topics --}}
             {{-- <p class="blog-card-filter">{{ $getTopicName($post) }}</p> --}}
 
             <p class="blog-card-text">{{ $post->title }}</p>
