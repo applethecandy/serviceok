@@ -19,14 +19,14 @@
                 </h4>
             </div>
 
-            <div class="impresum__field">
+            {{-- <div class="impresum__field">
                 <h4 class="h4">E-Mail:</h4>
                 <a href="mail:info@service_ok.com" class="h4 link-green">info@service_ok .com</a>
-            </div>
+            </div> --}}
 
             <div class="impresum__field">
                 <h4 class="h4">Telefon:</h4>
-                <a href="tel:+8853888888" class="h4 link-green">+8 853 88 88 88</a>
+                <a href="tel:08004009300" class="h4 link-green">08004009300</a>
             </div>
 
             {{-- @mark socials temporary hidden --}}

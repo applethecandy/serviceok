@@ -92,7 +92,7 @@
                         <span class="footer__time">@lang('layout/app.from') 9:00 @lang('layout/app.to') 21:00</span>
                     </div>
 
-                    <a href="mail:service_ok@gmail.com" class="link link_red">service_ok@gmail.com</a>
+                    {{-- <a href="mail:service_ok@gmail.com" class="link link_red">service_ok@gmail.com</a> --}}
 
                     <div class="footer__socials" style="display: none;"> {{-- @mark socials temporary hidden --}}
                         <a href="" class="social-link"><svg width="34" height="35" viewBox="0 0 34 35"
