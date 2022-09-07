@@ -43,7 +43,7 @@
                     <a href="{{ route('master.create') }}" class="link header__nav_item">@lang('layout/app.became_master')</a>
 
                     <div class="header__phone header__nav_item">
-                        <a href="tel:08004009300" class="link">0(800) 400-9300</a>
+                        <a href="tel:08004009300" class="link">08004009300</a>
                         <span class="free-call">@lang('layout/app.call_is_free')</span>
                     </div>
                 </nav>
@@ -87,7 +87,7 @@
                     <h4 class="h4">@lang('layout/app.contacts')</h4>
 
                     <div class="footer__phone">
-                        <a href="tel:08004009300" class="link">0(800) 400-9300</a>
+                        <a href="tel:08004009300" class="link">08004009300</a>
                         <span class="free-call">@lang('layout/app.call_is_free')</span>
                         <span class="footer__time">@lang('layout/app.from') 9:00 @lang('layout/app.to') 21:00</span>
                     </div>

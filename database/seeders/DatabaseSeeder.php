@@ -94,7 +94,7 @@ class DatabaseSeeder extends Seeder
             [
                 'topic' => 'unknown',
                 'image' => 'plugs/article1.jpg',
-                'title' => 'Was macht Service OC einzigartig',
+                'title' => 'Was macht Service OK einzigartig',
                 'text' => '
                 <p><b>Service OK</b> – ein Handwerkerdienst für alle Arten von Aufgaben im Haushalt. Wenn zum Beispiel Ihr Küchenwasserhahn kaputt ist, können wir schnell einen Handwerker finden, der ihn repariert.</p>
 <h2>1000 Handwerker</h2>
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
 <h2>Es gibt viel zu tun</h2>
 <p>Es gibt immer etwas zu tun! Unser Kundenstamm wächst ständig, so dass Sie nicht untätig sein werden, denn die Aufträge gehen täglich ein, auch an Wochenenden und Feiertagen. Sobald Sie sich registriert haben, werden Sie nicht vergessen, ein Manager wird Sie zurückrufen und Ihnen alle Einzelheiten mitteilen, und Sie werden Ihre ersten Aufträge erhalten.</p>
 <h2>So einfach ist das</h2>
-<p>Es ist sehr einfach, Mitarbeiter des Service OC zu werden. Sie müssen lediglich ein Formular mit Ihren Daten und Ihrem Beruf ausfüllen. Sie erhalten Aufträge für den von Ihnen gewählten Beruf. Wenn Sie Ihren Beruf nicht auf der Liste finden, erklären Sie dem Manager einfach, was Sie gut können, damit Sie nur Aufträge erhalten, die Sie erfüllen können.</p>
+<p>Es ist sehr einfach, Mitarbeiter des Service OK zu werden. Sie müssen lediglich ein Formular mit Ihren Daten und Ihrem Beruf ausfüllen. Sie erhalten Aufträge für den von Ihnen gewählten Beruf. Wenn Sie Ihren Beruf nicht auf der Liste finden, erklären Sie dem Manager einfach, was Sie gut können, damit Sie nur Aufträge erhalten, die Sie erfüllen können.</p>
 <h2>24/7 Unterstützung</h2>
 <p>Die Service-OK-Manager arbeiten rund um die Uhr, so dass alle Fragen und Probleme schnell gelöst werden können. Mit uns werden Sie mit Kundeneinwänden nicht allein gelassen, wir können Ihnen helfen, jede Konfliktsituation zu lösen.</p>
 <p><b>Service ОК</b> – ist ein einzigartiger Dienst, der Menschen, die einen Arbeiter brauchen, und Handwerker, die Arbeit suchen, zusammenbringt.</p>
@@ -281,7 +281,7 @@ Unsere Handwerker können Ihnen helfen, eine Zwischendecke einzubauen oder die W
 <p>Wenn alle Details geklärt sind, brauchen Sie nur noch zu warten. In dieser Zeit wird ein Manager einen Handwerker finden und ihn zu Ihnen schicken, um die Arbeit zu erledigen. Dies dauert in der Regel nicht lange, und Sie werden vor möglichen Verzögerungen gewarnt.</p>
 <h2>Wenn etwas schief geht.</h2>
 <p>Wir werden immer in Kontakt bleiben, wenn es einen Konflikt gibt oder Sie mit der Qualität der geleisteten Arbeit unzufrieden sind - rufen Sie uns an, wir werden jedes Problem lösen. Bitte teilen Sie uns mit, wenn ein Handwerker seine Arbeit nicht ordnungsgemäß erledigt hat, und wir werden Maßnahmen ergreifen.</p>
-<h2>Um den Dienst zu bestellen, rufen Sie 0(800) 400-9300 an oder hinterlassen Sie eine Anfrage auf der Startseite unserer Website.</h2>
+<h2>Um den Dienst zu bestellen, rufen Sie <a href="tel:08004009300">08004009300</a> an oder hinterlassen Sie eine Anfrage auf der Startseite unserer Website.</h2>
 <h2>Wir hoffen, dass Service OK bei Ihren Problemen helfen wird.</h2>
                 ',
             ],

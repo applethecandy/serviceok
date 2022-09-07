@@ -13,7 +13,7 @@ return [
     ],
     'titles' => [
         'service' => '1 028 Handwerker sind bereit, Ihnen zu helfen',
-        'info' => 'Wie funktioniert Servise OK ?',
+        'info' => 'Wie funktioniert Service OK ?',
         'reviews' => 'Rückmeldungen zum Service',
         'blog' => 'Neue Publikationen im',
         'blog_clickable' => 'Blog',
