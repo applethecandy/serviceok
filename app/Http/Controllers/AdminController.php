@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Work;
 use App\Models\Client;
 use App\Models\Master;
+use App\Exports\WorksExport;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminController extends Controller
 {
@@ -17,5 +19,10 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         return Work::updateComment($request);
+    }
+
+    public function export()
+    {
+        return Excel::download(new WorksExport, 'works.xlsx');
     }
 }

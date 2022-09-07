@@ -1,6 +1,10 @@
 <script defer src="{{ mix('js/admin.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ mix('css/admin.css') }}" />
 
+<div class="buttons">
+    <a href="{{ route('admin.export') }}">Excel export</a>
+    <a href="{{ route('admin.logout') }}">Log out</a>
+</div>
 
 <h1>Мастера</h1>
 
@@ -88,5 +92,3 @@
     </div>
 
 </div>
-
-<a href="{{ route('admin.logout') }}">Log out</a>

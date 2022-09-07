@@ -46,6 +46,8 @@ Route::prefix('become-master')->group(function () {
 Route::get('admin', [AdminController::class, 'index'])->name('admin.index')->middleware('auth');
 Route::put('admin/store', [AdminController::class, 'store'])->name('admin.store')->middleware('auth');
 
+Route::get('admin/export', [AdminController::class, 'export'])->name('admin.export')->middleware('auth');
+
 Route::get('admin/logout', [LogoutController::class, 'logout'])->name('admin.logout')->middleware('auth');
 Route::get('admin/login', [LoginController::class, 'show'])->name('admin.login');
 Route::post('admin/login', [LoginController::class, 'login'])->name('admin.process');
